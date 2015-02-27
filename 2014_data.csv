@@ -1,60 +1,469 @@
-2014,Dota 2,$16,550,044.53,589 Players,136 Tournaments
-2014,League of Legends,$8,012,394.87,1578 Players,419 Tournaments
-2014,StarCraft II,$3,390,614.96,417 Players,482 Tournaments
-2014,Counter-Strike: Global Offensive,$1,944,729.91,1256 Players,258 Tournaments
-2014,Call of Duty: Ghosts,$1,479,378.29,115 Players,50 Tournaments
-2014,Hearthstone: Heroes of WarCraft,$1,105,420.48,289 Players,170 Tournaments
-2014,World of Tanks,$690,436.68,42 Players,5 Tournaments
-2014,CrossFire,$489,611.85,112 Players,5 Tournaments
-2014,Smite,$462,909.60,76 Players,9 Tournaments
-2014,World of Warcraft,$250,000.00,24 Players,1 Tournament
-2014,WarCraft III,$187,891.80,17 Players,13 Tournaments
-2014,Heroes of Newerth,$181,888.00,20 Players,1 Tournament
-2014,Battlefield 4,$114,639.98,64 Players,8 Tournaments
-2014,Call of Duty: Advanced Warfare,$111,587.81,101 Players,23 Tournaments
-2014,Ultra Street Fighter IV,$105,804.67,38 Players,11 Tournaments
-2014,Point Blank,$78,000.00,57 Players,4 Tournaments
-2014,Halo 2,$76,883.69,36 Players,5 Tournaments
-2014,Quake Live,$64,578.46,81 Players,81 Tournaments
-2014,StarCraft: Brood War,$54,310.57,34 Players,15 Tournaments
-2014,Team Fortress 2,$52,184.10,51 Players,6 Tournaments
-2014,FIFA 14,$51,797.23,41 Players,48 Tournaments
-2014,Super Smash Bros. Melee,$49,710.70,39 Players,12 Tournaments
-2014,BlazBlue: Chronophantasma,$35,080.00,42 Players,7 Tournaments
-2014,Age of Empires II: The Age of Kings,$28,000.00,51 Players,1 Tournament
-2014,Super Street Fighter IV Arcade Edition,$26,732.20,41 Players,9 Tournaments
-2014,Heroes of the Storm,$22,022.50,47 Players,17 Tournaments
-2014,Killer Instinct (2013),$21,619.80,36 Players,8 Tournaments
-2014,Halo 4,$18,950.00,16 Players,3 Tournaments
-2014,ShootMania Storm,$15,000.00,9 Players,2 Tournaments
-2014,King of Fighters XIII,$13,459.40,39 Players,9 Tournaments
-2014,Project M,$12,348.50,26 Players,6 Tournaments
-2014,Ultimate Marvel vs. Capcom 3,$11,630.00,41 Players,9 Tournaments
-2014,Injustice: Gods Among Us,$11,350.00,39 Players,8 Tournaments
-2014,FIFA 15,$10,879.17,15 Players,10 Tournaments
-2014,TrackMania 2: Stadium,$9,866.20,6 Players,3 Tournaments
-2014,Tekken Tag Tournament 2,$8,348.39,47 Players,13 Tournaments
-2014,Super Smash Bros. Brawl,$6,803.39,9 Players,3 Tournaments
-2014,Halo 3,$6,476.18,2 Players,4 Tournaments
-2014,Call of Duty 4: Modern Warfare,$6,028.93,0 Players,3 Tournaments
-2014,NHL 14,$3,023.96,6 Players,3 Tournaments
-2014,Super Smash Bros.,$1,710.00,6 Players,1 Tournament
-2014,Counter-Strike,$1,500.00,5 Players,1 Tournament
-2014,Divekick,$500.00,3 Players,1 Tournament
-2014,Capcom vs. SNK 2,$0.00,15 Players,2 Tournaments
-2014,Dead or Alive 5 Ultimate,$0.00,22 Players,3 Tournaments
-2014,FIFA Online 3,$0.00,0 Players,1 Tournament
-2014,Guilty Gear XX Accent Core Plus R,$0.00,28 Players,4 Tournaments
-2014,Just Dance 2014,$0.00,3 Players,1 Tournament
-2014,Marvel vs. Capcom 2,$0.00,8 Players,1 Tournament
-2014,Mortal Kombat 9,$0.00,14 Players,2 Tournaments
-2014,NBA 2K Online,$0.00,0 Players,1 Tournament
-2014,Persona 4 Arena,$0.00,12 Players,2 Tournaments
-2014,Skullgirls Encore,$0.00,8 Players,1 Tournament
-2014,Soul Calibur II HD Online,$0.00,8 Players,1 Tournament
-2014,Soul Calibur V,$0.00,20 Players,3 Tournaments
-2014,Street Fighter Alpha 3,$0.00,8 Players,1 Tournament
-2014,Street Fighter III: 3rd Strike,$0.00,8 Players,1 Tournament
-2014,Street Fighter X Tekken,$0.00,25 Players,4 Tournaments
-2014,Super Street Fighter II Turbo,$0.00,23 Players,3 Tournaments
-2014,Virtua Fighter 5 Final Showdown,$0.00,16 Players,2 Tournaments
+Year,Game,Prize,Players,Tournaments
+2014,Dota 2,16550044.53,589 Players,136 Tournaments
+2014,League of Legends,8012394.87,1578 Players,419 Tournaments
+2014,StarCraft II,3390614.96,417 Players,482 Tournaments
+2014,Counter-Strike: Global Offensive,1944729.91,1256 Players,258 Tournaments
+2014,Call of Duty: Ghosts,1479378.29,115 Players,50 Tournaments
+2014,Hearthstone: Heroes of WarCraft,1105420.48,289 Players,170 Tournaments
+2014,World of Tanks,690436.68,42 Players,5 Tournaments
+2014,CrossFire,489611.85,112 Players,5 Tournaments
+2014,Smite,462909.60,76 Players,9 Tournaments
+2014,World of Warcraft,250000.00,24 Players,1 Tournament
+2014,WarCraft III,187891.80,17 Players,13 Tournaments
+2014,Heroes of Newerth,181888.00,20 Players,1 Tournament
+2014,Battlefield 4,114639.98,64 Players,8 Tournaments
+2014,Call of Duty: Advanced Warfare,111587.81,101 Players,23 Tournaments
+2014,Ultra Street Fighter IV,105804.67,38 Players,11 Tournaments
+2014,Point Blank,78000.00,57 Players,4 Tournaments
+2014,Halo 2,76883.69,36 Players,5 Tournaments
+2014,Quake Live,64578.46,81 Players,81 Tournaments
+2014,StarCraft: Brood War,54310.57,34 Players,15 Tournaments
+2014,Team Fortress 2,52184.10,51 Players,6 Tournaments
+2014,FIFA 14,51797.23,41 Players,48 Tournaments
+2014,Super Smash Bros. Melee,49710.70,39 Players,12 Tournaments
+2014,BlazBlue: Chronophantasma,35080.00,42 Players,7 Tournaments
+2014,Age of Empires II: The Age of Kings,28000.00,51 Players,1 Tournament
+2014,Super Street Fighter IV Arcade Edition,26732.20,41 Players,9 Tournaments
+2014,Heroes of the Storm,22022.50,47 Players,17 Tournaments
+2014,Killer Instinct (2013),21619.80,36 Players,8 Tournaments
+2014,Halo 4,18950.00,16 Players,3 Tournaments
+2014,ShootMania Storm,15000.00,9 Players,2 Tournaments
+2014,King of Fighters XIII,13459.40,39 Players,9 Tournaments
+2014,Project M,12348.50,26 Players,6 Tournaments
+2014,Ultimate Marvel vs. Capcom 3,11630.00,41 Players,9 Tournaments
+2014,Injustice: Gods Among Us,11350.00,39 Players,8 Tournaments
+2014,FIFA 15,10879.17,15 Players,10 Tournaments
+2014,TrackMania 2: Stadium,9866.20,6 Players,3 Tournaments
+2014,Tekken Tag Tournament 2,8348.39,47 Players,13 Tournaments
+2014,Super Smash Bros. Brawl,6803.39,9 Players,3 Tournaments
+2014,Halo 3,6476.18,2 Players,4 Tournaments
+2014,Call of Duty 4: Modern Warfare,6028.93,0 Players,3 Tournaments
+2014,NHL 14,3023.96,6 Players,3 Tournaments
+2014,Super Smash Bros.,1710.00,6 Players,1 Tournament
+2014,Counter-Strike,1500.00,5 Players,1 Tournament
+2014,Divekick,500.00,3 Players,1 Tournament
+2014,Capcom vs. SNK 2,0.00,15 Players,2 Tournaments
+2014,Dead or Alive 5 Ultimate,0.00,22 Players,3 Tournaments
+2014,FIFA Online 3,0.00,0 Players,1 Tournament
+2014,Guilty Gear XX Accent Core Plus R,0.00,28 Players,4 Tournaments
+2014,Just Dance 2014,0.00,3 Players,1 Tournament
+2014,Marvel vs. Capcom 2,0.00,8 Players,1 Tournament
+2014,Mortal Kombat 9,0.00,14 Players,2 Tournaments
+2014,NBA 2K Online,0.00,0 Players,1 Tournament
+2014,Persona 4 Arena,0.00,12 Players,2 Tournaments
+2014,Skullgirls Encore,0.00,8 Players,1 Tournament
+2014,Soul Calibur II HD Online,0.00,8 Players,1 Tournament
+2014,Soul Calibur V,0.00,20 Players,3 Tournaments
+2014,Street Fighter Alpha 3,0.00,8 Players,1 Tournament
+2014,Street Fighter III: 3rd Strike,0.00,8 Players,1 Tournament
+2014,Street Fighter X Tekken,0.00,25 Players,4 Tournaments
+2014,Super Street Fighter II Turbo,0.00,23 Players,3 Tournaments
+2014,Virtua Fighter 5 Final Showdown,0.00,16 Players,2 Tournaments
+2013,League of Legends,6126038.16,1135 Players,354 Tournaments
+2013,Dota 2,4467844.14,323 Players,102 Tournaments
+2013,StarCraft II,3748219.09,539 Players,387 Tournaments
+2013,Call of Duty: Black Ops 2,1342947.44,85 Players,31 Tournaments
+2013,Counter-Strike: Global Offensive,1176068.35,864 Players,185 Tournaments
+2013,Halo 4,361600.00,32 Players,10 Tournaments
+2013,World of Tanks,313000.00,21 Players,4 Tournaments
+2013,Turbo Racing League,250000.00,1 Player,1 Tournament
+2013,CrossFire,244209.50,92 Players,3 Tournaments
+2013,World of Warcraft,189000.00,12 Players,1 Tournament
+2013,FIFA 13,181149.41,33 Players,43 Tournaments
+2013,Madden NFL 13,140000.00,1 Player,1 Tournament
+2013,ShootMania Storm,125928.71,65 Players,30 Tournaments
+2013,Heroes of Newerth,119783.77,21 Players,3 Tournaments
+2013,StarCraft: Brood War,107880.38,33 Players,15 Tournaments
+2013,Super Street Fighter IV Arcade Edition,105708.05,58 Players,15 Tournaments
+2013,NHL 13,70000.00,1 Player,1 Tournament
+2013,WarCraft III,66261.28,22 Players,60 Tournaments
+2013,Call of Duty: Ghosts,62860.00,43 Players,8 Tournaments
+2013,Quake Live,50547.00,45 Players,21 Tournaments
+2013,Point Blank,48000.00,39 Players,3 Tournaments
+2013,Smite,43472.38,25 Players,3 Tournaments
+2013,Age of Empires II: The Age of Kings,30500.00,25 Players,2 Tournaments
+2013,FIFA 14,28687.53,18 Players,17 Tournaments
+2013,Team Fortress 2,24144.73,30 Players,4 Tournaments
+2013,Ultimate Marvel vs. Capcom 3,22320.00,38 Players,9 Tournaments
+2013,Super Smash Bros. Melee,20520.26,35 Players,8 Tournaments
+2013,Battlefield 4,15273.73,20 Players,2 Tournaments
+2013,Street Fighter X Tekken,10830.00,32 Players,8 Tournaments
+2013,Counter-Strike,10080.00,20 Players,1 Tournament
+2013,Super Smash Bros. Brawl,9339.90,19 Players,2 Tournaments
+2013,TrackMania 2: Stadium,9295.10,9 Players,3 Tournaments
+2013,Injustice: Gods Among Us,8620.00,39 Players,6 Tournaments
+2013,Tekken Tag Tournament 2,7205.86,31 Players,8 Tournaments
+2013,Defense of the Ancients (WC3),5955.02,0 Players,2 Tournaments
+2013,Call of Duty 4: Modern Warfare,5315.43,10 Players,4 Tournaments
+2013,King of Fighters XIII,4770.00,30 Players,8 Tournaments
+2013,Persona 4 Arena,4500.00,21 Players,6 Tournaments
+2013,Mortal Kombat 9,2330.00,16 Players,4 Tournaments
+2013,Project M,2022.00,9 Players,2 Tournaments
+2013,Super Smash Bros.,1460.00,8 Players,1 Tournament
+2013,Hearthstone: Heroes of WarCraft,1345.34,1 Player,1 Tournament
+2013,TrackMania Nations Forever,1116.91,3 Players,1 Tournament
+2013,Doom II: Hell on Earth,1000.00,1 Player,1 Tournament
+2013,Battlefield 3,0.00,0 Players,1 Tournament
+2013,BlazBlue: Continuum Shift Extend,0.00,3 Players,1 Tournament
+2013,Counter-Strike: Source,0.00,0 Players,1 Tournament
+2013,Dead or Alive 5,0.00,0 Players,1 Tournament
+2013,Dead or Alive 5 Ultimate,0.00,11 Players,2 Tournaments
+2013,Soul Calibur V,0.00,10 Players,2 Tournaments
+2013,TrackMania 2: Canyon,0.00,3 Players,1 Tournament
+2012,League of Legends,4230924.42,801 Players,341 Tournaments
+2012,StarCraft II,4123134.20,649 Players,547 Tournaments
+2012,Dota 2,2008591.83,166 Players,66 Tournaments
+2012,Counter-Strike,453895.03,339 Players,39 Tournaments
+2012,Counter-Strike: Global Offensive,218038.77,292 Players,45 Tournaments
+2012,Defense of the Ancients (WC3),203408.77,68 Players,7 Tournaments
+2012,World of Warcraft,189000.00,12 Players,1 Tournament
+2012,Counter-Strike: Source,167640.03,188 Players,20 Tournaments
+2012,Heroes of Newerth,126571.04,19 Players,5 Tournaments
+2012,World of Tanks,118502.27,67 Players,7 Tournaments
+2012,StarCraft: Brood War,105626.29,33 Players,15 Tournaments
+2012,Mortal Kombat 9,101300.00,24 Players,9 Tournaments
+2012,ShootMania Storm,100000.00,12 Players,2 Tournaments
+2012,WarCraft III,81561.64,32 Players,57 Tournaments
+2012,Super Street Fighter IV Arcade Edition,76970.58,38 Players,12 Tournaments
+2012,Quake Live,62284.81,21 Players,54 Tournaments
+2012,Street Fighter X Tekken,59800.00,30 Players,8 Tournaments
+2012,Halo: Reach,59175.20,44 Players,3 Tournaments
+2012,Point Blank,59000.00,49 Players,6 Tournaments
+2012,Soul Calibur V,57400.00,19 Players,8 Tournaments
+2012,CrossFire,51831.72,20 Players,3 Tournaments
+2012,FIFA 12,48722.03,30 Players,42 Tournaments
+2012,Halo 4,40000.00,16 Players,1 Tournament
+2012,Tekken Tag Tournament 2,35000.00,32 Players,3 Tournaments
+2012,Call of Duty: Modern Warfare 3,32772.56,76 Players,7 Tournaments
+2012,King of Fighters XIII,21700.00,29 Players,7 Tournaments
+2012,Bloodline Champions,21450.00,27 Players,6 Tournaments
+2012,Call of Duty: Black Ops 2,20000.00,16 Players,2 Tournaments
+2012,BlazBlue: Continuum Shift II,16999.58,0 Players,1 Tournament
+2012,Super Street Fighter II Turbo HD Remix,16200.00,18 Players,3 Tournaments
+2012,Street Fighter III: 3rd Strike,15700.00,15 Players,3 Tournaments
+2012,FIFA 13,15678.57,16 Players,16 Tournaments
+2012,TrackMania Nations Forever,15118.73,13 Players,5 Tournaments
+2012,Age of Empires II: The Age of Kings,14700.00,23 Players,1 Tournament
+2012,Battlefield 3,12251.07,0 Players,5 Tournaments
+2012,Team Fortress 2,10523.87,0 Players,3 Tournaments
+2012,Call of Duty 4: Modern Warfare,8992.32,6 Players,4 Tournaments
+2012,Ultimate Marvel vs. Capcom 3,4000.00,21 Players,5 Tournaments
+2012,Tekken 6,3971.22,5 Players,2 Tournaments
+2012,TrackMania 2: Canyon,3237.04,7 Players,25 Tournaments
+2012,Gears of War 3,2738.61,0 Players,1 Tournament
+2012,Super Smash Bros. Melee,2720.00,10 Players,2 Tournaments
+2012,Project M,320.00,3 Players,1 Tournament
+2012,Forza Motorsport 4,132.37,2 Players,1 Tournament
+2012,NHL 12,132.37,2 Players,1 Tournament
+2012,Dead or Alive 5,0.00,4 Players,1 Tournament
+2012,Persona 4 Arena,0.00,8 Players,1 Tournament
+2012,Super Street Fighter II Turbo,0.00,4 Players,1 Tournament
+2012,TrackMania Nations,0.00,0 Players,1 Tournament
+2011,StarCraft II,3086145.35,438 Players,594 Tournaments
+2011,Dota 2,1662268.08,87 Players,5 Tournaments
+2011,Call of Duty: Modern Warfare 3,1000000.00,28 Players,1 Tournament
+2011,Counter-Strike,790280.44,471 Players,55 Tournaments
+2011,Halo: Reach,577000.00,56 Players,8 Tournaments
+2011,League of Legends,512100.90,313 Players,127 Tournaments
+2011,StarCraft: Brood War,419143.87,69 Players,10 Tournaments
+2011,Call of Duty: Black Ops,301396.55,64 Players,11 Tournaments
+2011,Counter-Strike: Source,196753.54,208 Players,27 Tournaments
+2011,Defense of the Ancients (WC3),187491.15,80 Players,12 Tournaments
+2011,World of Warcraft,165000.00,15 Players,3 Tournaments
+2011,WarCraft III,147727.55,53 Players,63 Tournaments
+2011,Quake Live,124929.24,39 Players,67 Tournaments
+2011,Heroes of Newerth,82990.35,31 Players,6 Tournaments
+2011,FIFA 11,79871.79,32 Players,46 Tournaments
+2011,CrossFire,34000.00,15 Players,1 Tournament
+2011,Super Street Fighter IV Arcade Edition,29936.12,18 Players,5 Tournaments
+2011,Tekken 6,29673.09,10 Players,4 Tournaments
+2011,Mortal Kombat 9,27620.00,13 Players,3 Tournaments
+2011,TrackMania Nations Forever,27093.55,35 Players,11 Tournaments
+2011,Team Fortress 2,24894.75,31 Players,8 Tournaments
+2011,Bloodline Champions,20000.00,16 Players,2 Tournaments
+2011,World of Tanks,18503.12,7 Players,2 Tournaments
+2011,Marvel vs. Capcom 2,15000.00,6 Players,3 Tournaments
+2011,Super Smash Bros. Melee,13724.02,28 Players,4 Tournaments
+2011,Marvel vs. Capcom 3,10720.00,8 Players,2 Tournaments
+2011,Super Smash Bros. Brawl,10415.02,20 Players,2 Tournaments
+2011,Call of Duty 4: Modern Warfare,8919.42,10 Players,6 Tournaments
+2011,TrackMania 2: Canyon,2302.66,3 Players,1 Tournament
+2011,BlazBlue: Continuum Shift II,2080.00,3 Players,1 Tournament
+2011,FIFA 12,1761.00,12 Players,13 Tournaments
+2011,Super Smash Bros.,330.00,3 Players,1 Tournament
+2011,Project M,225.00,4 Players,1 Tournament
+2011,Mortal Kombat vs. DC Universe,0.00,3 Players,1 Tournament
+2011,Super Street Fighter II Turbo HD Remix,0.00,3 Players,1 Tournament
+2011,Super Street Fighter IV,0.00,17 Players,7 Tournaments
+2011,TrackMania Nations,0.00,0 Players,1 Tournament
+2011,Trackmania United Forever,0.00,0 Players,1 Tournament
+2011,Ultimate Mortal Kombat 3,0.00,3 Players,1 Tournament
+2010,Counter-Strike,1209098.42,532 Players,77 Tournaments
+2010,Halo 3,784000.00,52 Players,6 Tournaments
+2010,StarCraft II,720318.96,254 Players,158 Tournaments
+2010,StarCraft: Brood War,624599.64,96 Players,14 Tournaments
+2010,WarCraft III,307303.60,64 Players,76 Tournaments
+2010,World of Warcraft,241250.00,33 Players,9 Tournaments
+2010,Counter-Strike: Source,210828.46,223 Players,32 Tournaments
+2010,Quake Live,168699.56,57 Players,74 Tournaments
+2010,Defense of the Ancients (WC3),138138.78,84 Players,13 Tournaments
+2010,Halo: Reach,114000.00,1 Player,2 Tournaments
+2010,Soul Calibur IV,100000.00,1 Player,1 Tournament
+2010,FIFA 10,81061.64,32 Players,41 Tournaments
+2010,Gears of War 2,75000.00,0 Players,1 Tournament
+2010,Tekken 6,74000.00,20 Players,8 Tournaments
+2010,Super Smash Bros. Brawl,67964.99,35 Players,7 Tournaments
+2010,Heroes of Newerth,37564.90,18 Players,3 Tournaments
+2010,TrackMania Nations Forever,30649.49,38 Players,10 Tournaments
+2010,League of Legends,27942.64,87 Players,23 Tournaments
+2010,Call of Duty: Modern Warfare 2,27048.80,29 Players,2 Tournaments
+2010,Team Fortress 2,26693.94,150 Players,13 Tournaments
+2010,Super Street Fighter IV,14000.00,14 Players,4 Tournaments
+2010,Carom 3D,11000.00,3 Players,1 Tournament
+2010,Forza Motorsport 3,11000.00,3 Players,1 Tournament
+2010,Need for Speed: Shift,10500.00,3 Players,1 Tournament
+2010,Super Smash Bros. Melee,6510.00,23 Players,4 Tournaments
+2010,Call of Duty 4: Modern Warfare,5791.05,0 Players,6 Tournaments
+2010,Day of Defeat: Source,3069.04,0 Players,3 Tournaments
+2010,Street Fighter IV,2767.21,8 Players,3 Tournaments
+2010,FIFA 09,2731.65,3 Players,2 Tournaments
+2010,Warhammer 40000: Dawn of War,1816.50,2 Players,1 Tournament
+2010,FIFA 11,1768.26,11 Players,16 Tournaments
+2010,Pro Evolution Soccer 2009,682.91,3 Players,1 Tournament
+2010,Super Smash Bros.,110.00,3 Players,1 Tournament
+2010,Marvel vs. Capcom 2,0.00,3 Players,1 Tournament
+2010,Melty Blood: Actress Again,0.00,3 Players,1 Tournament
+2010,Super Street Fighter II Turbo HD Remix,0.00,3 Players,1 Tournament
+2010,Tatsunoko vs. Capcom: Ultimate All-Stars,0.00,3 Players,1 Tournament
+2009,Counter-Strike,1100149.30,462 Players,75 Tournaments
+2009,StarCraft: Brood War,701105.19,116 Players,28 Tournaments
+2009,WarCraft III,375579.97,64 Players,86 Tournaments
+2009,World of Warcraft,342647.65,52 Players,11 Tournaments
+2009,Halo 3,224000.00,49 Players,4 Tournaments
+2009,Counter-Strike: Source,155032.75,179 Players,23 Tournaments
+2009,FIFA 09,103718.81,18 Players,10 Tournaments
+2009,Defense of the Ancients (WC3),85069.44,76 Players,11 Tournaments
+2009,Quake Live,71946.08,30 Players,18 Tournaments
+2009,Gears of War 2,60000.00,0 Players,4 Tournaments
+2009,Call of Duty 4: Modern Warfare,59175.19,35 Players,8 Tournaments
+2009,TrackMania Nations Forever,23258.80,13 Players,6 Tournaments
+2009,Red Stone,23000.00,12 Players,1 Tournament
+2009,Team Fortress 2,16759.16,105 Players,6 Tournaments
+2009,Rainbow Six: Vegas 2,15000.00,0 Players,1 Tournament
+2009,Super Smash Bros. Brawl,12709.00,21 Players,4 Tournaments
+2009,Carom 3D,12000.00,3 Players,1 Tournament
+2009,Virtua Fighter 5,12000.00,3 Players,1 Tournament
+2009,Super Smash Bros. Melee,11873.00,22 Players,6 Tournaments
+2009,Quake III Arena,7287.84,17 Players,6 Tournaments
+2009,Street Fighter IV,1025.75,10 Players,4 Tournaments
+2009,Day of Defeat: Source,713.06,0 Players,1 Tournament
+2009,Pro Evolution Soccer 2009,713.06,3 Players,4 Tournaments
+2009,Guilty Gear XX Accent Core,0.00,6 Players,1 Tournament
+2009,Guilty Gear XX Accent Core Plus,0.00,3 Players,1 Tournament
+2009,Marvel vs. Capcom 2,0.00,3 Players,1 Tournament
+2009,Pro Evolution Soccer 3,0.00,0 Players,1 Tournament
+2009,Soul Calibur IV,0.00,0 Players,1 Tournament
+2009,Street Fighter III: 3rd Strike,0.00,0 Players,1 Tournament
+2009,Super Street Fighter II Turbo HD Remix,0.00,8 Players,2 Tournaments
+2008,Counter-Strike,1302324.09,398 Players,64 Tournaments
+2008,StarCraft: Brood War,971204.03,104 Players,21 Tournaments
+2008,Halo 3,680000.00,58 Players,8 Tournaments
+2008,WarCraft III,633466.67,74 Players,96 Tournaments
+2008,Counter-Strike: Source,553020.18,124 Players,18 Tournaments
+2008,World of Warcraft,400500.00,45 Players,10 Tournaments
+2008,World in Conflict,227515.35,20 Players,4 Tournaments
+2008,Forza Motorsport 2,207000.00,16 Players,1 Tournament
+2008,Dead or Alive 4,189708.46,18 Players,3 Tournaments
+2008,FIFA 08,186083.24,23 Players,8 Tournaments
+2008,F.E.A.R.,118000.00,8 Players,2 Tournaments
+2008,Unreal Tournament 3,104812.82,3 Players,3 Tournaments
+2008,Defense of the Ancients (WC3),81556.24,45 Players,11 Tournaments
+2008,Gears of War,64000.00,0 Players,5 Tournaments
+2008,Rainbow Six: Vegas 2,64000.00,0 Players,5 Tournaments
+2008,Quake III Arena,63369.74,19 Players,12 Tournaments
+2008,Red Stone,35000.00,6 Players,1 Tournament
+2008,Command & Conquer 3,25208.46,6 Players,4 Tournaments
+2008,Need for Speed: ProStreet,25208.46,6 Players,2 Tournaments
+2008,Project Gotham Racing 4,25208.46,5 Players,3 Tournaments
+2008,Quake Live,25000.00,19 Players,2 Tournaments
+2008,TrackMania Nations,23000.00,3 Players,3 Tournaments
+2008,Age of Empires III,17500.00,3 Players,1 Tournament
+2008,Carom 3D,17500.00,3 Players,1 Tournament
+2008,Virtua Fighter 5,17500.00,3 Players,2 Tournaments
+2008,Call of Duty 4: Modern Warfare,15000.00,4 Players,4 Tournaments
+2008,QuakeWorld,2775.07,0 Players,1 Tournament
+2008,TrackMania Nations Forever,1970.00,3 Players,1 Tournament
+2008,Capcom vs. SNK 2,0.00,3 Players,1 Tournament
+2008,Pro Evolution Soccer 2008,0.00,0 Players,1 Tournament
+2008,Project Gotham Racing 3,0.00,0 Players,1 Tournament
+2008,Street Fighter III: 3rd Strike,0.00,5 Players,2 Tournaments
+2008,Super Smash Bros. Brawl,0.00,0 Players,1 Tournament
+2008,Super Street Fighter II Turbo,0.00,3 Players,1 Tournament
+2008,Team Fortress 2,0.00,0 Players,1 Tournament
+2008,Tekken 5: Dark Resurrection,0.00,3 Players,1 Tournament
+2007,Counter-Strike,1102294.89,364 Players,41 Tournaments
+2007,StarCraft: Brood War,1037987.59,81 Players,20 Tournaments
+2007,WarCraft III,760795.11,82 Players,62 Tournaments
+2007,Halo 2,615800.00,46 Players,12 Tournaments
+2007,Counter-Strike: Source,535706.09,110 Players,6 Tournaments
+2007,Dead or Alive 4,254986.85,30 Players,6 Tournaments
+2007,Project Gotham Racing 3,224986.85,27 Players,5 Tournaments
+2007,World of Warcraft,213500.00,13 Players,7 Tournaments
+2007,FIFA 07,193255.19,26 Players,9 Tournaments
+2007,Rainbow Six: Vegas,167500.00,0 Players,6 Tournaments
+2007,Gears of War,162000.00,0 Players,6 Tournaments
+2007,Quake 4,114996.07,17 Players,6 Tournaments
+2007,World in Conflict,60000.00,15 Players,3 Tournaments
+2007,F.E.A.R.,59500.00,20 Players,3 Tournaments
+2007,Super Smash Bros. Melee,41950.00,33 Players,13 Tournaments
+2007,Defense of the Ancients (WC3),35076.49,31 Players,6 Tournaments
+2007,Need for Speed Carbon,29322.58,5 Players,2 Tournaments
+2007,Shadowrun,24000.00,0 Players,3 Tournaments
+2007,Age of Empires III,20000.00,3 Players,1 Tournament
+2007,Carom 3D,20000.00,3 Players,1 Tournament
+2007,Command & Conquer 3,20000.00,3 Players,2 Tournaments
+2007,Pro Evolution Soccer 6,19000.00,3 Players,1 Tournament
+2007,TrackMania Nations,19000.00,3 Players,1 Tournament
+2007,Battlefield 2142,13644.88,0 Players,2 Tournaments
+2007,Quake III Arena,3861.47,8 Players,4 Tournaments
+2007,Live for Speed,2008.27,5 Players,1 Tournament
+2007,Day of Defeat: Source,996.07,0 Players,1 Tournament
+2007,Super Smash Bros.,525.00,3 Players,1 Tournament
+2007,Call of Duty 2,0.00,0 Players,1 Tournament
+2007,Capcom vs. SNK 2,0.00,3 Players,1 Tournament
+2007,FIFA 08,0.00,0 Players,1 Tournament
+2007,Guilty Gear XX Accent Core,0.00,0 Players,1 Tournament
+2007,Marvel vs. Capcom 2,0.00,3 Players,1 Tournament
+2007,Street Fighter III: 3rd Strike,0.00,3 Players,1 Tournament
+2007,Super Street Fighter II Turbo,0.00,3 Players,1 Tournament
+2007,Tekken 5: Dark Resurrection,0.00,3 Players,1 Tournament
+2007,Virtua Fighter 5,0.00,3 Players,1 Tournament
+2006,Counter-Strike,1610147.01,562 Players,54 Tournaments
+2006,StarCraft: Brood War,673921.72,97 Players,29 Tournaments
+2006,Halo 2,574050.00,53 Players,17 Tournaments
+2006,WarCraft III,450585.70,67 Players,57 Tournaments
+2006,Quake 4,349276.75,53 Players,30 Tournaments
+2006,Super Smash Bros. Melee,139150.00,36 Players,18 Tournaments
+2006,Quake III Arena,83813.76,46 Players,6 Tournaments
+2006,FIFA 06,57649.10,5 Players,6 Tournaments
+2006,Battlefield 2,54166.08,0 Players,5 Tournaments
+2006,Warhammer 40000: Dawn of War,43000.00,3 Players,1 Tournament
+2006,Dead or Alive 4,42800.00,8 Players,4 Tournaments
+2006,Counter-Strike: Source,32197.31,5 Players,4 Tournaments
+2006,Gran Turismo 4,32000.00,4 Players,1 Tournament
+2006,Pro Evolution Soccer 5,32000.00,4 Players,1 Tournament
+2006,TrackMania Nations,32000.00,4 Players,1 Tournament
+2006,Project Gotham Racing 3,28300.00,4 Players,2 Tournaments
+2006,Need for Speed: Most Wanted,28000.00,8 Players,5 Tournaments
+2006,FIFA 07,27300.00,5 Players,3 Tournaments
+2006,Call of Duty 2,17693.31,0 Players,3 Tournaments
+2006,Forza Motorsport 2,15000.00,2 Players,1 Tournament
+2006,Defense of the Ancients (WC3),738.83,5 Players,1 Tournament
+2006,Capcom vs. SNK 2,0.00,3 Players,1 Tournament
+2006,Guilty Gear XX Slash,0.00,0 Players,1 Tournament
+2006,Hyper Street Fighter II,0.00,3 Players,1 Tournament
+2006,Live for Speed,0.00,2 Players,2 Tournaments
+2006,Marvel vs. Capcom 2,0.00,3 Players,1 Tournament
+2006,Street Fighter III: 3rd Strike,0.00,3 Players,1 Tournament
+2006,Tekken 5,0.00,3 Players,1 Tournament
+2006,Unreal Tournament 2004,0.00,0 Players,1 Tournament
+2005,Counter-Strike,989564.64,446 Players,54 Tournaments
+2005,Painkiller,960000.00,42 Players,10 Tournaments
+2005,StarCraft: Brood War,584685.59,85 Players,27 Tournaments
+2005,WarCraft III,355517.82,60 Players,30 Tournaments
+2005,Halo 2,152500.00,54 Players,27 Tournaments
+2005,Counter-Strike: Source,85000.00,15 Players,2 Tournaments
+2005,Quake III Arena,56673.87,24 Players,9 Tournaments
+2005,Doom 3,50000.00,3 Players,1 Tournament
+2005,FIFA 05,48300.94,5 Players,7 Tournaments
+2005,Pro Evolution Soccer 4,40000.00,8 Players,2 Tournaments
+2005,Need for Speed: Underground 2,35000.00,6 Players,3 Tournaments
+2005,Warhammer 40000: Dawn of War,35000.00,3 Players,1 Tournament
+2005,Quake 4,31648.08,37 Players,3 Tournaments
+2005,Dead or Alive Ultimate,30000.00,3 Players,1 Tournament
+2005,Unreal Tournament 2004,26512.27,10 Players,5 Tournaments
+2005,Quake II,20000.00,3 Players,1 Tournament
+2005,Gran Turismo 4,12000.00,4 Players,1 Tournament
+2005,Super Smash Bros. Melee,9000.00,20 Players,24 Tournaments
+2005,Halo: Combat Evolved,3675.00,11 Players,3 Tournaments
+2005,Defense of the Ancients (WC3),1736.36,0 Players,2 Tournaments
+2005,Live for Speed,1010.87,5 Players,2 Tournaments
+2005,FIFA 06,694.54,4 Players,1 Tournament
+2005,Need for Speed: Most Wanted,694.54,4 Players,1 Tournament
+2005,Call of Duty,0.00,0 Players,1 Tournament
+2005,Capcom vs. SNK 2,0.00,3 Players,1 Tournament
+2005,Guilty Gear XX #Reload,0.00,3 Players,1 Tournament
+2005,Marvel vs. Capcom 2,0.00,3 Players,1 Tournament
+2005,Project Gotham Racing 2,0.00,3 Players,1 Tournament
+2005,Street Fighter III: 3rd Strike,0.00,3 Players,1 Tournament
+2005,Super Street Fighter II Turbo,0.00,3 Players,1 Tournament
+2005,Tekken 5,0.00,3 Players,8 Tournaments
+2005,Tekken Tag Tournament,0.00,3 Players,1 Tournament
+2004,Counter-Strike,584501.26,320 Players,38 Tournaments
+2004,StarCraft: Brood War,423711.25,46 Players,13 Tournaments
+2004,Doom 3,207748.16,13 Players,3 Tournaments
+2004,WarCraft III,206872.07,76 Players,57 Tournaments
+2004,Quake III Arena,111500.00,35 Players,4 Tournaments
+2004,Counter-Strike: Condition Zero,85000.00,15 Players,1 Tournament
+2004,Halo: Combat Evolved,85000.00,13 Players,5 Tournaments
+2004,Unreal Tournament 2004,56512.41,11 Players,3 Tournaments
+2004,Painkiller,55000.00,18 Players,3 Tournaments
+2004,Call of Duty,50000.00,18 Players,1 Tournament
+2004,Unreal Tournament,50000.00,0 Players,1 Tournament
+2004,FIFA 04,40000.00,3 Players,2 Tournaments
+2004,Need for Speed: Underground,35000.00,3 Players,1 Tournament
+2004,Project Gotham Racing 2,35000.00,3 Players,1 Tournament
+2004,Pro Evolution Soccer 3,25000.00,8 Players,1 Tournament
+2004,Age of Empires II: The Age of Kings,4000.00,8 Players,1 Tournament
+2004,Age of Mythology,2800.00,8 Players,1 Tournament
+2004,Capcom vs. SNK 2,0.00,3 Players,1 Tournament
+2004,FIFA 05,0.00,0 Players,1 Tournament
+2004,Guilty Gear XX,0.00,3 Players,1 Tournament
+2004,Live for Speed,0.00,1 Player,2 Tournaments
+2004,Marvel vs. Capcom 2,0.00,3 Players,1 Tournament
+2004,Soul Calibur II,0.00,3 Players,1 Tournament
+2004,Street Fighter III: 3rd Strike,0.00,3 Players,1 Tournament
+2004,Super Street Fighter II Turbo,0.00,3 Players,1 Tournament
+2004,Tekken 4,0.00,3 Players,1 Tournament
+2004,Tekken Tag Tournament,0.00,3 Players,1 Tournament
+2004,Virtua Fighter 4: Evolution,0.00,3 Players,1 Tournament
+2003,Counter-Strike,668163.97,265 Players,22 Tournaments
+2003,WarCraft III,175410.42,42 Players,24 Tournaments
+2003,StarCraft: Brood War,168118.07,36 Players,12 Tournaments
+2003,Unreal Tournament 2003,107656.41,13 Players,7 Tournaments
+2003,Quake III Arena,94663.46,21 Players,5 Tournaments
+2003,Age of Mythology,49000.00,3 Players,3 Tournaments
+2003,FIFA 03,40066.44,6 Players,2 Tournaments
+2003,NASCAR Thunder 2003,5933.50,0 Players,1 Tournament
+2003,FIFA 04,0.00,0 Players,1 Tournament
+2003,Live for Speed,0.00,1 Player,1 Tournament
+2003,Return to Castle Wolfenstein,0.00,0 Players,1 Tournament
+2002,Counter-Strike,365817.47,294 Players,8 Tournaments
+2002,StarCraft: Brood War,106554.66,28 Players,7 Tournaments
+2002,Quake III Arena,92666.10,12 Players,3 Tournaments
+2002,Return to Castle Wolfenstein,67424.30,30 Players,2 Tournaments
+2002,2002 FIFA World Cup,43000.00,8 Players,1 Tournament
+2002,Age of Empires II: The Age of Kings,43000.00,8 Players,1 Tournament
+2002,Unreal Tournament,43000.00,8 Players,1 Tournament
+2002,WarCraft III,31285.25,12 Players,4 Tournaments
+2002,Unreal Tournament 2003,25500.00,8 Players,1 Tournament
+2002,NASCAR Thunder 2002,7679.25,0 Players,1 Tournament
+2002,Star Wars Jedi Knight II: Jedi Outcast,7679.25,0 Players,1 Tournament
+2001,Counter-Strike,318071.67,167 Players,9 Tournaments
+2001,Quake III Arena,127864.70,37 Players,10 Tournaments
+2001,Age of Empires II: The Age of Kings,126000.00,10 Players,2 Tournaments
+2001,StarCraft: Brood War,75636.99,38 Players,6 Tournaments
+2001,Aliens versus Predator 2,40000.00,1 Player,1 Tournament
+2001,FIFA 2001,35000.00,3 Players,1 Tournament
+2001,Unreal Tournament,35000.00,3 Players,1 Tournament
+2001,QuakeWorld,15000.00,8 Players,1 Tournament
+2000,Quake III Arena,307276.63,86 Players,15 Tournaments
+2000,StarCraft: Brood War,133038.04,47 Players,9 Tournaments
+2000,Age of Empires II: The Age of Kings,50000.00,4 Players,1 Tournament
+2000,Counter-Strike,23763.33,52 Players,2 Tournaments
+1999,StarCraft: Brood War,152771.08,27 Players,9 Tournaments
+1999,Descent 3,50000.00,1 Player,1 Tournament
+1999,Quake III Arena,43200.00,15 Players,2 Tournaments
+1998,QuakeWorld,37000.00,8 Players,2 Tournaments
+1998,Quake II,36200.00,12 Players,2 Tournaments
+1998,StarCraft: Brood War,16200.00,3 Players,1 Tournament
