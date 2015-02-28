@@ -32,6 +32,13 @@ for row in reader:
 	
 	(data[gameName])[year] = {"Prize":prize, "Players":players, "Tournaments":tournaments}
 
+datalist = []
+
 for entry in data:
 	pprint.pprint(data[entry])
-	json.dump(data[entry], jsonfile)
+	datalist.append(data[entry])
+
+json.dump(datalist, jsonfile)
+#	json.dump(data[entry], jsonfile)
+#	jsonfile.write(',')
+#	jsonfile.write('\n')

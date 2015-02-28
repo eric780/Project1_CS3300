@@ -17,6 +17,13 @@
 		.attr("id", "main_svg")
 		.attr("height", "500")
 		.attr("width", "700");
+
+	var gamesData;
+	d3.json("gamesData.json", function(error, data){
+		gamesData = data;
+		
+
+	});
 	</script>
 </body>
 </html>
