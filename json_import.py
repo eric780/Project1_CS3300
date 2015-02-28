@@ -15,7 +15,7 @@ data = dict()
 #create dictionaries
 for row in reader:
 	if row["Game"] not in games:
-		data[row["Game"]] = {"Game": row["Game"]}
+		data[row["Game"]] = {"Game": row["Game"], "Data": []}
 		games.add(row["Game"])
 
 #data is now a dictionary of dictionaries, looks like:
@@ -30,7 +30,7 @@ for row in reader:
 	players = row["Players"]
 	tournaments = row["Tournaments"]
 	
-	(data[gameName])[year] = {"Prize":prize, "Players":players, "Tournaments":tournaments}
+	(data[gameName])["Data"].append({"Year": year, "Prize":prize, "Players":players, "Tournaments":tournaments})
 
 datalist = []
 

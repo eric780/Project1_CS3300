@@ -13,14 +13,31 @@
 	</div>
 
 	<script>
-	d3.select("#main").append("svg")
+	var svg = d3.select("#main").append("svg")
 		.attr("id", "main_svg")
 		.attr("height", "500")
 		.attr("width", "700");
 
+	var g = svg.append("g");
+
+	//year
+	var xScale = d3.scale.linear().domain([1998, 2014]).range([0, 700]);
+	//prize money
+	var yScale = d3.scale.linear().domain([0, 17000000]).range([500, 0]);
+
 	var gamesData;
 	d3.json("gamesData.json", function(error, data){
 		gamesData = data;
+
+		var line = d3.svg.line()
+		.x(function(game){ return xScale(Number(game["Year"] ))})
+		.y(function(game){ return yScale(Number(game["Prize"] ))});
+
+		gamesData.forEach(function(game){
+			console.log(game);
+			svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", "black");
+
+		});
 		
 
 	});
