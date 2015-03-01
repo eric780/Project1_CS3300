@@ -39,8 +39,8 @@
 
 		gamesData.forEach(function(game){
 			
-			
-			svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", "black");
+			var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+			svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", randomColor).style("stroke-width", "3");
 
 		});
 		
