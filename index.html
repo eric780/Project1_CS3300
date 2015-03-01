@@ -13,7 +13,10 @@
 	</div>
 
 	<script>
-	var maxPrize = 17000000;
+
+	var maxPrize = 20000000;
+	var maxPrize2 = 2500000;
+
 	var nonVideoGames = ["Snooker", "Poker World Series"];
 	var canvasX = 1000;
 	var canvasY = 500;
@@ -27,6 +30,13 @@
 		.attr("height", canvasY)
 		.attr("width", canvasX);
 
+	d3.select("#main").append("br");
+
+	var svg2 = d3.select("#main").append("svg")
+		.attr("id", "main_svg")
+		.attr("height", canvasY)
+		.attr("width", canvasX);
+
 	var g = svg.append("g");
 
 	//year
@@ -35,6 +45,8 @@
 	//var yScale = d3.scale.log().domain([100, maxPrize]).range([canvasY - bottomMargin, topMargin]);
 	var yScale = d3.scale.linear().domain([0, maxPrize]).range([canvasY - bottomMargin, topMargin]);
 
+	var yScale2 = d3.scale.linear().domain([0, maxPrize2]).range([canvasY - bottomMargin, topMargin]);
+
 	var gamesData;
 	d3.json("gamesData.json", function(error, data){
 		gamesData = data;
@@ -42,21 +54,24 @@
 		var line = d3.svg.line()
 		.x(function(game){ return xScale(Number(game["Year"])) })
 		.y(function(game){ return yScale(Number(game["Prize"])) });
+		var line2 = d3.svg.line()
+		.x(function(game){ return xScale(Number(game["Year"])) })
+		.y(function(game){ return yScale2(Number(game["Prize"])) });
 
 		var colAngle = 0;
 		var angleIncrement = 360 / (gamesData.length - nonVideoGames.length);
 		gamesData.forEach(function(game){
 			var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
 
-			
-
-
+			var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
 			if(nonVideoGames.indexOf(game.Game) !== -1) {
 				newPath.style("stroke", "#000000").style("stroke-width", "5px");
+				newPath2.style("stroke", "#000000").style("stroke-width", "5px");
 			} else {
 				if(game.Data.length > 3){
 					//filter out data without many points
 					newPath.style("stroke", d3.hsl(colAngle, 1, 0.45));
+					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.45));
 				}
 				colAngle += angleIncrement;
 			}
@@ -79,35 +94,29 @@
 
 		});
 		
-
 		var xAxis = d3.svg.axis().scale(xScale).orient("bottom").tickFormat(d3.format(""));
-		var yAxis = d3.svg.axis().scale(yScale).orient("left").tickFormat(
-			function(d){
-				//logic insipired by http://stackoverflow.com/questions/2967898/retrieving-the-first-digit-of-a-number
-
-				//get first digit i
-				i = d;
-				while (i >= 10) {
-					i /= 10;
-				}
-
-				//print out only if the number starts with 1
-				if(Math.round(i) === 1) {
-					return (d3.format("s"))(d);
-				}
-			}
-		);
+		//axes: graph 1
+		var yAxis = d3.svg.axis().scale(yScale).orient("left").tickFormat(function(d) {return d3.format(".1f")(d/1000000);});
 		svg.append("g").attr("class", "axis").attr("transform", "translate(0, " + (canvasY - bottomMargin) + ")").call(xAxis);
 		svg.append("g").attr("class", "axis").attr("transform", "translate(" + (leftMargin) + ", 0)").call(yAxis);
-
 		//Title and axis labels
-		svg.append("text").attr("x", canvasX/2).attr("y", "50")
-			.attr("font-size", "30").attr("text-anchor", "middle").text("Title");
 		svg.append("text").attr("x", canvasX/2).attr("y", canvasY-15)
 			.attr("font-size", "15").attr("text-anchor", "middle").text("Year");
 		svg.append("text").attr("x", "20").attr("y", canvasY/2)
 			.attr("font-size", "15").attr("text-anchor", "middle").attr("transform", "rotate(-90, 20, "+ canvasY/2 +")")
-			.text("Prize Money (dollars)");
+			.text("Prize Money (millions of dollars)");
+
+
+		//axes: graph 2
+		var yAxis2 = d3.svg.axis().scale(yScale2).orient("left").tickFormat(function(d) {return d3.format(".1f")(d/1000000);});
+		svg2.append("g").attr("class", "axis").attr("transform", "translate(0, " + (canvasY - bottomMargin) + ")").call(xAxis);
+		svg2.append("g").attr("class", "axis").attr("transform", "translate(" + (leftMargin) + ", 0)").call(yAxis2);
+		//Title and axis labels
+		svg2.append("text").attr("x", canvasX/2).attr("y", canvasY-15)
+			.attr("font-size", "15").attr("text-anchor", "middle").text("Year");
+		svg2.append("text").attr("x", "20").attr("y", canvasY/2)
+			.attr("font-size", "15").attr("text-anchor", "middle").attr("transform", "rotate(-90, 20, "+ canvasY/2 +")")
+			.text("Prize Money (millions of dollars)");
 	});
 	</script>
 </body>
