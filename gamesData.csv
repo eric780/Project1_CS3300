@@ -7,463 +7,330 @@ Year,Game,Prize,Players,Tournaments
 2014,Hearthstone: Heroes of WarCraft,1105420.48,289,170
 2014,World of Tanks,690436.68,42,5
 2014,CrossFire,489611.85,112,5
-2014,Smite,462909.60,76,9
-2014,World of Warcraft,250000.00,24,1
-2014,WarCraft III,187891.80,17,13
-2014,Heroes of Newerth,181888.00,20,1
+2014,Smite,462909.6,76,9
+2014,World of Warcraft,250000,24,1
+2014,WarCraft III,187891.8,17,13
+2014,Heroes of Newerth,181888,20,1
 2014,Battlefield 4,114639.98,64,8
 2014,Call of Duty: Advanced Warfare,111587.81,101,23
 2014,Ultra Street Fighter IV,105804.67,38,11
-2014,Point Blank,78000.00,57,4
+2014,Point Blank,78000,57,4
 2014,Halo 2,76883.69,36,5
 2014,Quake Live,64578.46,81,81
 2014,StarCraft: Brood War,54310.57,34,15
-2014,Team Fortress 2,52184.10,51,6
+2014,Team Fortress 2,52184.1,51,6
 2014,FIFA 14,51797.23,41,48
-2014,Super Smash Bros. Melee,49710.70,39,12
-2014,BlazBlue: Chronophantasma,35080.00,42,7
-2014,Age of Empires II: The Age of Kings,28000.00,51,1
-2014,Super Street Fighter IV Arcade Edition,26732.20,41,9
-2014,Heroes of the Storm,22022.50,47,17
-2014,Killer Instinct (2013),21619.80,36,8
-2014,Halo 4,18950.00,16,3
-2014,ShootMania Storm,15000.00,9,2
-2014,King of Fighters XIII,13459.40,39,9
-2014,Project M,12348.50,26,6
-2014,Ultimate Marvel vs. Capcom 3,11630.00,41,9
-2014,Injustice: Gods Among Us,11350.00,39,8
+2014,Super Smash Bros. Melee,49710.7,39,12
+2014,BlazBlue: Chronophantasma,35080,42,7
+2014,Age of Empires II: The Age of Kings,28000,51,1
+2014,Super Street Fighter IV Arcade Edition,26732.2,41,9
+2014,Heroes of the Storm,22022.5,47,17
+2014,Killer Instinct (2013),21619.8,36,8
+2014,Halo 4,18950,16,3
+2014,ShootMania Storm,15000,9,2
+2014,King of Fighters XIII,13459.4,39,9
+2014,Project M,12348.5,26,6
+2014,Ultimate Marvel vs. Capcom 3,11630,41,9
+2014,Injustice: Gods Among Us,11350,39,8
 2014,FIFA 15,10879.17,15,10
-2014,TrackMania 2: Stadium,9866.20,6,3
+2014,TrackMania 2: Stadium,9866.2,6,3
 2014,Tekken Tag Tournament 2,8348.39,47,13
 2014,Super Smash Bros. Brawl,6803.39,9,3
 2014,Halo 3,6476.18,2,4
 2014,Call of Duty 4: Modern Warfare,6028.93,0,3
 2014,NHL 14,3023.96,6,3
-2014,Super Smash Bros.,1710.00,6,1
-2014,Counter-Strike,1500.00,5,1
-2014,Divekick,500.00,3,1
-2014,Capcom vs. SNK 2,0.00,15,2
-2014,Dead or Alive 5 Ultimate,0.00,22,3
-2014,FIFA Online 3,0.00,0,1
-2014,Guilty Gear XX Accent Core Plus R,0.00,28,4
-2014,Just Dance 2014,0.00,3,1
-2014,Marvel vs. Capcom 2,0.00,8,1
-2014,Mortal Kombat 9,0.00,14,2
-2014,NBA 2K Online,0.00,0,1
-2014,Persona 4 Arena,0.00,12,2
-2014,Skullgirls Encore,0.00,8,1
-2014,Soul Calibur II HD Online,0.00,8,1
-2014,Soul Calibur V,0.00,20,3
-2014,Street Fighter Alpha 3,0.00,8,1
-2014,Street Fighter III: 3rd Strike,0.00,8,1
-2014,Street Fighter X Tekken,0.00,25,4
-2014,Super Street Fighter II Turbo,0.00,23,3
-2014,Virtua Fighter 5 Final Showdown,0.00,16,2
+2014,Super Smash Bros.,1710,6,1
+2014,Counter-Strike,1500,5,1
+2014,Divekick,500,3,1
 2013,League of Legends,6126038.16,1135,354
 2013,Dota 2,4467844.14,323,102
 2013,StarCraft II,3748219.09,539,387
 2013,Call of Duty: Black Ops 2,1342947.44,85,31
 2013,Counter-Strike: Global Offensive,1176068.35,864,185
-2013,Halo 4,361600.00,32,10
-2013,World of Tanks,313000.00,21,4
-2013,Turbo Racing League,250000.00,1,1
-2013,CrossFire,244209.50,92,3
-2013,World of Warcraft,189000.00,12,1
+2013,Halo 4,361600,32,10
+2013,World of Tanks,313000,21,4
+2013,Turbo Racing League,250000,1,1
+2013,CrossFire,244209.5,92,3
+2013,World of Warcraft,189000,12,1
 2013,FIFA 13,181149.41,33,43
-2013,Madden NFL 13,140000.00,1,1
+2013,Madden NFL 13,140000,1,1
 2013,ShootMania Storm,125928.71,65,30
 2013,Heroes of Newerth,119783.77,21,3
 2013,StarCraft: Brood War,107880.38,33,15
 2013,Super Street Fighter IV Arcade Edition,105708.05,58,15
-2013,NHL 13,70000.00,1,1
+2013,NHL 13,70000,1,1
 2013,WarCraft III,66261.28,22,60
-2013,Call of Duty: Ghosts,62860.00,43,8
-2013,Quake Live,50547.00,45,21
-2013,Point Blank,48000.00,39,3
+2013,Call of Duty: Ghosts,62860,43,8
+2013,Quake Live,50547,45,21
+2013,Point Blank,48000,39,3
 2013,Smite,43472.38,25,3
-2013,Age of Empires II: The Age of Kings,30500.00,25,2
+2013,Age of Empires II: The Age of Kings,30500,25,2
 2013,FIFA 14,28687.53,18,17
 2013,Team Fortress 2,24144.73,30,4
-2013,Ultimate Marvel vs. Capcom 3,22320.00,38,9
+2013,Ultimate Marvel vs. Capcom 3,22320,38,9
 2013,Super Smash Bros. Melee,20520.26,35,8
 2013,Battlefield 4,15273.73,20,2
-2013,Street Fighter X Tekken,10830.00,32,8
-2013,Counter-Strike,10080.00,20,1
-2013,Super Smash Bros. Brawl,9339.90,19,2
-2013,TrackMania 2: Stadium,9295.10,9,3
-2013,Injustice: Gods Among Us,8620.00,39,6
+2013,Street Fighter X Tekken,10830,32,8
+2013,Counter-Strike,10080,20,1
+2013,Super Smash Bros. Brawl,9339.9,19,2
+2013,TrackMania 2: Stadium,9295.1,9,3
+2013,Injustice: Gods Among Us,8620,39,6
 2013,Tekken Tag Tournament 2,7205.86,31,8
 2013,Defense of the Ancients (WC3),5955.02,0,2
 2013,Call of Duty 4: Modern Warfare,5315.43,10,4
-2013,King of Fighters XIII,4770.00,30,8
-2013,Persona 4 Arena,4500.00,21,6
-2013,Mortal Kombat 9,2330.00,16,4
-2013,Project M,2022.00,9,2
-2013,Super Smash Bros.,1460.00,8,1
+2013,King of Fighters XIII,4770,30,8
+2013,Persona 4 Arena,4500,21,6
+2013,Mortal Kombat 9,2330,16,4
+2013,Project M,2022,9,2
+2013,Super Smash Bros.,1460,8,1
 2013,Hearthstone: Heroes of WarCraft,1345.34,1,1
 2013,TrackMania Nations Forever,1116.91,3,1
-2013,Doom II: Hell on Earth,1000.00,1,1
-2013,Battlefield 3,0.00,0,1
-2013,BlazBlue: Continuum Shift Extend,0.00,3,1
-2013,Counter-Strike: Source,0.00,0,1
-2013,Dead or Alive 5,0.00,0,1
-2013,Dead or Alive 5 Ultimate,0.00,11,2
-2013,Soul Calibur V,0.00,10,2
-2013,TrackMania 2: Canyon,0.00,3,1
+2013,Doom II: Hell on Earth,1000,1,1
 2012,League of Legends,4230924.42,801,341
-2012,StarCraft II,4123134.20,649,547
+2012,StarCraft II,4123134.2,649,547
 2012,Dota 2,2008591.83,166,66
 2012,Counter-Strike,453895.03,339,39
 2012,Counter-Strike: Global Offensive,218038.77,292,45
 2012,Defense of the Ancients (WC3),203408.77,68,7
-2012,World of Warcraft,189000.00,12,1
+2012,World of Warcraft,189000,12,1
 2012,Counter-Strike: Source,167640.03,188,20
 2012,Heroes of Newerth,126571.04,19,5
 2012,World of Tanks,118502.27,67,7
 2012,StarCraft: Brood War,105626.29,33,15
-2012,Mortal Kombat 9,101300.00,24,9
-2012,ShootMania Storm,100000.00,12,2
+2012,Mortal Kombat 9,101300,24,9
+2012,ShootMania Storm,100000,12,2
 2012,WarCraft III,81561.64,32,57
 2012,Super Street Fighter IV Arcade Edition,76970.58,38,12
 2012,Quake Live,62284.81,21,54
-2012,Street Fighter X Tekken,59800.00,30,8
-2012,Halo: Reach,59175.20,44,3
-2012,Point Blank,59000.00,49,6
-2012,Soul Calibur V,57400.00,19,8
+2012,Street Fighter X Tekken,59800,30,8
+2012,Halo: Reach,59175.2,44,3
+2012,Point Blank,59000,49,6
+2012,Soul Calibur V,57400,19,8
 2012,CrossFire,51831.72,20,3
 2012,FIFA 12,48722.03,30,42
-2012,Halo 4,40000.00,16,1
-2012,Tekken Tag Tournament 2,35000.00,32,3
+2012,Halo 4,40000,16,1
+2012,Tekken Tag Tournament 2,35000,32,3
 2012,Call of Duty: Modern Warfare 3,32772.56,76,7
-2012,King of Fighters XIII,21700.00,29,7
-2012,Bloodline Champions,21450.00,27,6
-2012,Call of Duty: Black Ops 2,20000.00,16,2
+2012,King of Fighters XIII,21700,29,7
+2012,Bloodline Champions,21450,27,6
+2012,Call of Duty: Black Ops 2,20000,16,2
 2012,BlazBlue: Continuum Shift II,16999.58,0,1
-2012,Super Street Fighter II Turbo HD Remix,16200.00,18,3
-2012,Street Fighter III: 3rd Strike,15700.00,15,3
+2012,Super Street Fighter II Turbo HD Remix,16200,18,3
+2012,Street Fighter III: 3rd Strike,15700,15,3
 2012,FIFA 13,15678.57,16,16
 2012,TrackMania Nations Forever,15118.73,13,5
-2012,Age of Empires II: The Age of Kings,14700.00,23,1
+2012,Age of Empires II: The Age of Kings,14700,23,1
 2012,Battlefield 3,12251.07,0,5
 2012,Team Fortress 2,10523.87,0,3
 2012,Call of Duty 4: Modern Warfare,8992.32,6,4
-2012,Ultimate Marvel vs. Capcom 3,4000.00,21,5
+2012,Ultimate Marvel vs. Capcom 3,4000,21,5
 2012,Tekken 6,3971.22,5,2
 2012,TrackMania 2: Canyon,3237.04,7,25
 2012,Gears of War 3,2738.61,0,1
-2012,Super Smash Bros. Melee,2720.00,10,2
-2012,Project M,320.00,3,1
+2012,Super Smash Bros. Melee,2720,10,2
+2012,Project M,320,3,1
 2012,Forza Motorsport 4,132.37,2,1
 2012,NHL 12,132.37,2,1
-2012,Dead or Alive 5,0.00,4,1
-2012,Persona 4 Arena,0.00,8,1
-2012,Super Street Fighter II Turbo,0.00,4,1
-2012,TrackMania Nations,0.00,0,1
 2011,StarCraft II,3086145.35,438,594
 2011,Dota 2,1662268.08,87,5
-2011,Call of Duty: Modern Warfare 3,1000000.00,28,1
+2011,Call of Duty: Modern Warfare 3,1000000,28,1
 2011,Counter-Strike,790280.44,471,55
-2011,Halo: Reach,577000.00,56,8
-2011,League of Legends,512100.90,313,127
+2011,Halo: Reach,577000,56,8
+2011,League of Legends,512100.9,313,127
 2011,StarCraft: Brood War,419143.87,69,10
 2011,Call of Duty: Black Ops,301396.55,64,11
 2011,Counter-Strike: Source,196753.54,208,27
 2011,Defense of the Ancients (WC3),187491.15,80,12
-2011,World of Warcraft,165000.00,15,3
+2011,World of Warcraft,165000,15,3
 2011,WarCraft III,147727.55,53,63
 2011,Quake Live,124929.24,39,67
 2011,Heroes of Newerth,82990.35,31,6
 2011,FIFA 11,79871.79,32,46
-2011,CrossFire,34000.00,15,1
+2011,CrossFire,34000,15,1
 2011,Super Street Fighter IV Arcade Edition,29936.12,18,5
 2011,Tekken 6,29673.09,10,4
-2011,Mortal Kombat 9,27620.00,13,3
+2011,Mortal Kombat 9,27620,13,3
 2011,TrackMania Nations Forever,27093.55,35,11
 2011,Team Fortress 2,24894.75,31,8
-2011,Bloodline Champions,20000.00,16,2
+2011,Bloodline Champions,20000,16,2
 2011,World of Tanks,18503.12,7,2
-2011,Marvel vs. Capcom 2,15000.00,6,3
+2011,Marvel vs. Capcom 2,15000,6,3
 2011,Super Smash Bros. Melee,13724.02,28,4
-2011,Marvel vs. Capcom 3,10720.00,8,2
+2011,Marvel vs. Capcom 3,10720,8,2
 2011,Super Smash Bros. Brawl,10415.02,20,2
 2011,Call of Duty 4: Modern Warfare,8919.42,10,6
 2011,TrackMania 2: Canyon,2302.66,3,1
-2011,BlazBlue: Continuum Shift II,2080.00,3,1
-2011,FIFA 12,1761.00,12,13
-2011,Super Smash Bros.,330.00,3,1
-2011,Project M,225.00,4,1
-2011,Mortal Kombat vs. DC Universe,0.00,3,1
-2011,Super Street Fighter II Turbo HD Remix,0.00,3,1
-2011,Super Street Fighter IV,0.00,17,7
-2011,TrackMania Nations,0.00,0,1
-2011,Trackmania United Forever,0.00,0,1
-2011,Ultimate Mortal Kombat 3,0.00,3,1
+2011,BlazBlue: Continuum Shift II,2080,3,1
+2011,FIFA 12,1761,12,13
+2011,Super Smash Bros.,330,3,1
 2010,Counter-Strike,1209098.42,532,77
-2010,Halo 3,784000.00,52,6
+2010,Halo 3,784000,52,6
 2010,StarCraft II,720318.96,254,158
 2010,StarCraft: Brood War,624599.64,96,14
-2010,WarCraft III,307303.60,64,76
-2010,World of Warcraft,241250.00,33,9
+2010,WarCraft III,307303.6,64,76
+2010,World of Warcraft,241250,33,9
 2010,Counter-Strike: Source,210828.46,223,32
 2010,Quake Live,168699.56,57,74
 2010,Defense of the Ancients (WC3),138138.78,84,13
-2010,Halo: Reach,114000.00,1,2
-2010,Soul Calibur IV,100000.00,1,1
+2010,Halo: Reach,114000,1,2
+2010,Soul Calibur IV,100000,1,1
 2010,FIFA 10,81061.64,32,41
-2010,Gears of War 2,75000.00,0,1
-2010,Tekken 6,74000.00,20,8
+2010,Gears of War 2,75000,0,1
+2010,Tekken 6,74000,20,8
 2010,Super Smash Bros. Brawl,67964.99,35,7
-2010,Heroes of Newerth,37564.90,18,3
+2010,Heroes of Newerth,37564.9,18,3
 2010,TrackMania Nations Forever,30649.49,38,10
 2010,League of Legends,27942.64,87,23
-2010,Call of Duty: Modern Warfare 2,27048.80,29,2
+2010,Call of Duty: Modern Warfare 2,27048.8,29,2
 2010,Team Fortress 2,26693.94,150,13
-2010,Super Street Fighter IV,14000.00,14,4
-2010,Carom 3D,11000.00,3,1
-2010,Forza Motorsport 3,11000.00,3,1
-2010,Need for Speed: Shift,10500.00,3,1
-2010,Super Smash Bros. Melee,6510.00,23,4
+2010,Super Street Fighter IV,14000,14,4
+2010,Carom 3D,11000,3,1
+2010,Forza Motorsport 3,11000,3,1
+2010,Need for Speed: Shift,10500,3,1
+2010,Super Smash Bros. Melee,6510,23,4
 2010,Call of Duty 4: Modern Warfare,5791.05,0,6
 2010,Day of Defeat: Source,3069.04,0,3
 2010,Street Fighter IV,2767.21,8,3
 2010,FIFA 09,2731.65,3,2
-2010,Warhammer 40000: Dawn of War,1816.50,2,1
+2010,Warhammer 40000: Dawn of War,1816.5,2,1
 2010,FIFA 11,1768.26,11,16
 2010,Pro Evolution Soccer 2009,682.91,3,1
-2010,Super Smash Bros.,110.00,3,1
-2010,Marvel vs. Capcom 2,0.00,3,1
-2010,Melty Blood: Actress Again,0.00,3,1
-2010,Super Street Fighter II Turbo HD Remix,0.00,3,1
-2010,Tatsunoko vs. Capcom: Ultimate All-Stars,0.00,3,1
-2009,Counter-Strike,1100149.30,462,75
+2010,Super Smash Bros.,110,3,1
+2009,Counter-Strike,1100149.3,462,75
 2009,StarCraft: Brood War,701105.19,116,28
 2009,WarCraft III,375579.97,64,86
 2009,World of Warcraft,342647.65,52,11
-2009,Halo 3,224000.00,49,4
+2009,Halo 3,224000,49,4
 2009,Counter-Strike: Source,155032.75,179,23
 2009,FIFA 09,103718.81,18,10
 2009,Defense of the Ancients (WC3),85069.44,76,11
 2009,Quake Live,71946.08,30,18
-2009,Gears of War 2,60000.00,0,4
+2009,Gears of War 2,60000,0,4
 2009,Call of Duty 4: Modern Warfare,59175.19,35,8
-2009,TrackMania Nations Forever,23258.80,13,6
-2009,Red Stone,23000.00,12,1
+2009,TrackMania Nations Forever,23258.8,13,6
+2009,Red Stone,23000,12,1
 2009,Team Fortress 2,16759.16,105,6
-2009,Rainbow Six: Vegas 2,15000.00,0,1
-2009,Super Smash Bros. Brawl,12709.00,21,4
-2009,Carom 3D,12000.00,3,1
-2009,Virtua Fighter 5,12000.00,3,1
-2009,Super Smash Bros. Melee,11873.00,22,6
+2009,Rainbow Six: Vegas 2,15000,0,1
+2009,Super Smash Bros. Brawl,12709,21,4
+2009,Carom 3D,12000,3,1
+2009,Virtua Fighter 5,12000,3,1
+2009,Super Smash Bros. Melee,11873,22,6
 2009,Quake III Arena,7287.84,17,6
 2009,Street Fighter IV,1025.75,10,4
 2009,Day of Defeat: Source,713.06,0,1
 2009,Pro Evolution Soccer 2009,713.06,3,4
-2009,Guilty Gear XX Accent Core,0.00,6,1
-2009,Guilty Gear XX Accent Core Plus,0.00,3,1
-2009,Marvel vs. Capcom 2,0.00,3,1
-2009,Pro Evolution Soccer 3,0.00,0,1
-2009,Soul Calibur IV,0.00,0,1
-2009,Street Fighter III: 3rd Strike,0.00,0,1
-2009,Super Street Fighter II Turbo HD Remix,0.00,8,2
 2008,Counter-Strike,1302324.09,398,64
 2008,StarCraft: Brood War,971204.03,104,21
-2008,Halo 3,680000.00,58,8
+2008,Halo 3,680000,58,8
 2008,WarCraft III,633466.67,74,96
 2008,Counter-Strike: Source,553020.18,124,18
-2008,World of Warcraft,400500.00,45,10
+2008,World of Warcraft,400500,45,10
 2008,World in Conflict,227515.35,20,4
-2008,Forza Motorsport 2,207000.00,16,1
+2008,Forza Motorsport 2,207000,16,1
 2008,Dead or Alive 4,189708.46,18,3
 2008,FIFA 08,186083.24,23,8
-2008,F.E.A.R.,118000.00,8,2
+2008,F.E.A.R.,118000,8,2
 2008,Unreal Tournament 3,104812.82,3,3
 2008,Defense of the Ancients (WC3),81556.24,45,11
-2008,Gears of War,64000.00,0,5
-2008,Rainbow Six: Vegas 2,64000.00,0,5
+2008,Gears of War,64000,0,5
+2008,Rainbow Six: Vegas 2,64000,0,5
 2008,Quake III Arena,63369.74,19,12
-2008,Red Stone,35000.00,6,1
 2008,Command & Conquer 3,25208.46,6,4
-2008,Need for Speed: ProStreet,25208.46,6,2
-2008,Project Gotham Racing 4,25208.46,5,3
-2008,Quake Live,25000.00,19,2
-2008,TrackMania Nations,23000.00,3,3
-2008,Age of Empires III,17500.00,3,1
-2008,Carom 3D,17500.00,3,1
-2008,Virtua Fighter 5,17500.00,3,2
-2008,Call of Duty 4: Modern Warfare,15000.00,4,4
+2008,Quake Live,25000,19,2
+2008,Age of Empires III,17500,3,1
+2008,Call of Duty 4: Modern Warfare,15000,4,4
 2008,QuakeWorld,2775.07,0,1
-2008,TrackMania Nations Forever,1970.00,3,1
-2008,Capcom vs. SNK 2,0.00,3,1
-2008,Pro Evolution Soccer 2008,0.00,0,1
-2008,Project Gotham Racing 3,0.00,0,1
-2008,Street Fighter III: 3rd Strike,0.00,5,2
-2008,Super Smash Bros. Brawl,0.00,0,1
-2008,Super Street Fighter II Turbo,0.00,3,1
-2008,Team Fortress 2,0.00,0,1
-2008,Tekken 5: Dark Resurrection,0.00,3,1
 2007,Counter-Strike,1102294.89,364,41
 2007,StarCraft: Brood War,1037987.59,81,20
 2007,WarCraft III,760795.11,82,62
-2007,Halo 2,615800.00,46,12
+2007,Halo 2,615800,46,12
 2007,Counter-Strike: Source,535706.09,110,6
 2007,Dead or Alive 4,254986.85,30,6
-2007,Project Gotham Racing 3,224986.85,27,5
-2007,World of Warcraft,213500.00,13,7
+2007,World of Warcraft,213500,13,7
 2007,FIFA 07,193255.19,26,9
-2007,Rainbow Six: Vegas,167500.00,0,6
-2007,Gears of War,162000.00,0,6
+2007,Gears of War,162000,0,6
 2007,Quake 4,114996.07,17,6
-2007,World in Conflict,60000.00,15,3
-2007,F.E.A.R.,59500.00,20,3
-2007,Super Smash Bros. Melee,41950.00,33,13
+2007,F.E.A.R.,59500,20,3
+2007,Super Smash Bros. Melee,41950,33,13
 2007,Defense of the Ancients (WC3),35076.49,31,6
 2007,Need for Speed Carbon,29322.58,5,2
-2007,Shadowrun,24000.00,0,3
-2007,Age of Empires III,20000.00,3,1
-2007,Carom 3D,20000.00,3,1
-2007,Command & Conquer 3,20000.00,3,2
-2007,Pro Evolution Soccer 6,19000.00,3,1
-2007,TrackMania Nations,19000.00,3,1
-2007,Battlefield 2142,13644.88,0,2
+2007,Age of Empires III,20000,3,1
 2007,Quake III Arena,3861.47,8,4
-2007,Live for Speed,2008.27,5,1
-2007,Day of Defeat: Source,996.07,0,1
-2007,Super Smash Bros.,525.00,3,1
-2007,Call of Duty 2,0.00,0,1
-2007,Capcom vs. SNK 2,0.00,3,1
-2007,FIFA 08,0.00,0,1
-2007,Guilty Gear XX Accent Core,0.00,0,1
-2007,Marvel vs. Capcom 2,0.00,3,1
-2007,Street Fighter III: 3rd Strike,0.00,3,1
-2007,Super Street Fighter II Turbo,0.00,3,1
-2007,Tekken 5: Dark Resurrection,0.00,3,1
-2007,Virtua Fighter 5,0.00,3,1
+2007,Super Smash Bros.,525,3,1
 2006,Counter-Strike,1610147.01,562,54
 2006,StarCraft: Brood War,673921.72,97,29
-2006,Halo 2,574050.00,53,17
-2006,WarCraft III,450585.70,67,57
+2006,Halo 2,574050,53,17
+2006,WarCraft III,450585.7,67,57
 2006,Quake 4,349276.75,53,30
-2006,Super Smash Bros. Melee,139150.00,36,18
+2006,Super Smash Bros. Melee,139150,36,18
 2006,Quake III Arena,83813.76,46,6
-2006,FIFA 06,57649.10,5,6
-2006,Battlefield 2,54166.08,0,5
-2006,Warhammer 40000: Dawn of War,43000.00,3,1
-2006,Dead or Alive 4,42800.00,8,4
+2006,FIFA 06,57649.1,5,6
 2006,Counter-Strike: Source,32197.31,5,4
-2006,Gran Turismo 4,32000.00,4,1
-2006,Pro Evolution Soccer 5,32000.00,4,1
-2006,TrackMania Nations,32000.00,4,1
-2006,Project Gotham Racing 3,28300.00,4,2
-2006,Need for Speed: Most Wanted,28000.00,8,5
-2006,FIFA 07,27300.00,5,3
+2006,Gran Turismo 4,32000,4,1
+2006,Pro Evolution Soccer 5,32000,4,1
+2006,FIFA 07,27300,5,3
 2006,Call of Duty 2,17693.31,0,3
-2006,Forza Motorsport 2,15000.00,2,1
+2006,Forza Motorsport 2,15000,2,1
 2006,Defense of the Ancients (WC3),738.83,5,1
-2006,Capcom vs. SNK 2,0.00,3,1
-2006,Guilty Gear XX Slash,0.00,0,1
-2006,Hyper Street Fighter II,0.00,3,1
-2006,Live for Speed,0.00,2,2
-2006,Marvel vs. Capcom 2,0.00,3,1
-2006,Street Fighter III: 3rd Strike,0.00,3,1
-2006,Tekken 5,0.00,3,1
-2006,Unreal Tournament 2004,0.00,0,1
 2005,Counter-Strike,989564.64,446,54
-2005,Painkiller,960000.00,42,10
 2005,StarCraft: Brood War,584685.59,85,27
 2005,WarCraft III,355517.82,60,30
-2005,Halo 2,152500.00,54,27
-2005,Counter-Strike: Source,85000.00,15,2
+2005,Halo 2,152500,54,27
+2005,Counter-Strike: Source,85000,15,2
 2005,Quake III Arena,56673.87,24,9
-2005,Doom 3,50000.00,3,1
+2005,Doom 3,50000,3,1
 2005,FIFA 05,48300.94,5,7
-2005,Pro Evolution Soccer 4,40000.00,8,2
-2005,Need for Speed: Underground 2,35000.00,6,3
-2005,Warhammer 40000: Dawn of War,35000.00,3,1
+2005,Need for Speed: Underground 2,35000,6,3
 2005,Quake 4,31648.08,37,3
-2005,Dead or Alive Ultimate,30000.00,3,1
+2005,Dead or Alive Ultimate,30000,3,1
 2005,Unreal Tournament 2004,26512.27,10,5
-2005,Quake II,20000.00,3,1
-2005,Gran Turismo 4,12000.00,4,1
-2005,Super Smash Bros. Melee,9000.00,20,24
-2005,Halo: Combat Evolved,3675.00,11,3
+2005,Quake II,20000,3,1
+2005,Super Smash Bros. Melee,9000,20,24
+2005,Halo: Combat Evolved,3675,11,3
 2005,Defense of the Ancients (WC3),1736.36,0,2
-2005,Live for Speed,1010.87,5,2
 2005,FIFA 06,694.54,4,1
 2005,Need for Speed: Most Wanted,694.54,4,1
-2005,Call of Duty,0.00,0,1
-2005,Capcom vs. SNK 2,0.00,3,1
-2005,Guilty Gear XX #Reload,0.00,3,1
-2005,Marvel vs. Capcom 2,0.00,3,1
-2005,Project Gotham Racing 2,0.00,3,1
-2005,Street Fighter III: 3rd Strike,0.00,3,1
-2005,Super Street Fighter II Turbo,0.00,3,1
-2005,Tekken 5,0.00,3,8
-2005,Tekken Tag Tournament,0.00,3,1
 2004,Counter-Strike,584501.26,320,38
 2004,StarCraft: Brood War,423711.25,46,13
 2004,Doom 3,207748.16,13,3
 2004,WarCraft III,206872.07,76,57
-2004,Quake III Arena,111500.00,35,4
-2004,Counter-Strike: Condition Zero,85000.00,15,1
-2004,Halo: Combat Evolved,85000.00,13,5
+2004,Quake III Arena,111500,35,4
+2004,Counter-Strike: Condition Zero,85000,15,1
+2004,Halo: Combat Evolved,85000,13,5
 2004,Unreal Tournament 2004,56512.41,11,3
-2004,Painkiller,55000.00,18,3
-2004,Call of Duty,50000.00,18,1
-2004,Unreal Tournament,50000.00,0,1
-2004,FIFA 04,40000.00,3,2
-2004,Need for Speed: Underground,35000.00,3,1
-2004,Project Gotham Racing 2,35000.00,3,1
-2004,Pro Evolution Soccer 3,25000.00,8,1
-2004,Age of Empires II: The Age of Kings,4000.00,8,1
-2004,Age of Mythology,2800.00,8,1
-2004,Capcom vs. SNK 2,0.00,3,1
-2004,FIFA 05,0.00,0,1
-2004,Guilty Gear XX,0.00,3,1
-2004,Live for Speed,0.00,1,2
-2004,Marvel vs. Capcom 2,0.00,3,1
-2004,Soul Calibur II,0.00,3,1
-2004,Street Fighter III: 3rd Strike,0.00,3,1
-2004,Super Street Fighter II Turbo,0.00,3,1
-2004,Tekken 4,0.00,3,1
-2004,Tekken Tag Tournament,0.00,3,1
-2004,Virtua Fighter 4: Evolution,0.00,3,1
+2004,Call of Duty,50000,18,1
+2004,Unreal Tournament,50000,0,1
+2004,FIFA 04,40000,3,2
+2004,Need for Speed: Underground,35000,3,1
+2004,Age of Empires II: The Age of Kings,4000,8,1
 2003,Counter-Strike,668163.97,265,22
 2003,WarCraft III,175410.42,42,24
 2003,StarCraft: Brood War,168118.07,36,12
 2003,Unreal Tournament 2003,107656.41,13,7
 2003,Quake III Arena,94663.46,21,5
-2003,Age of Mythology,49000.00,3,3
 2003,FIFA 03,40066.44,6,2
-2003,NASCAR Thunder 2003,5933.50,0,1
-2003,FIFA 04,0.00,0,1
-2003,Live for Speed,0.00,1,1
-2003,Return to Castle Wolfenstein,0.00,0,1
-2002,Counter-Strike,365817.47,294,8
+2003,Counter-Strike,365817.47,294,8
 2002,StarCraft: Brood War,106554.66,28,7
-2002,Quake III Arena,92666.10,12,3
-2002,Return to Castle Wolfenstein,67424.30,30,2
-2002,2002 FIFA World Cup,43000.00,8,1
-2002,Age of Empires II: The Age of Kings,43000.00,8,1
-2002,Unreal Tournament,43000.00,8,1
+2002,Quake III Arena,92666.1,12,3
+2002,2002 FIFA World Cup,43000,8,1
+2002,Age of Empires II: The Age of Kings,43000,8,1
+2002,Unreal Tournament,43000,8,1
 2002,WarCraft III,31285.25,12,4
-2002,Unreal Tournament 2003,25500.00,8,1
-2002,NASCAR Thunder 2002,7679.25,0,1
-2002,Star Wars Jedi Knight II: Jedi Outcast,7679.25,0,1
-2001,Counter-Strike,318071.67,167,9
-2001,Quake III Arena,127864.70,37,10
-2001,Age of Empires II: The Age of Kings,126000.00,10,2
+2002,Unreal Tournament 2003,25500,8,1
+2002,Counter-Strike,318071.67,167,9
+2001,Quake III Arena,127864.7,37,10
+2001,Age of Empires II: The Age of Kings,126000,10,2
 2001,StarCraft: Brood War,75636.99,38,6
-2001,Aliens versus Predator 2,40000.00,1,1
-2001,FIFA 2001,35000.00,3,1
-2001,Unreal Tournament,35000.00,3,1
-2001,QuakeWorld,15000.00,8,1
-2000,Quake III Arena,307276.63,86,15
+2001,FIFA 2001,35000,3,1
+2001,Unreal Tournament,35000,3,1
+2001,QuakeWorld,15000,8,1
+2001,Quake III Arena,307276.63,86,15
 2000,StarCraft: Brood War,133038.04,47,9
-2000,Age of Empires II: The Age of Kings,50000.00,4,1
+2000,Age of Empires II: The Age of Kings,50000,4,1
 2000,Counter-Strike,23763.33,52,2
-1999,StarCraft: Brood War,152771.08,27,9
-1999,Descent 3,50000.00,1,1
-1999,Quake III Arena,43200.00,15,2
-1998,QuakeWorld,37000.00,8,2
-1998,Quake II,36200.00,12,2
-1998,StarCraft: Brood War,16200.00,3,1
+2000,StarCraft: Brood War,152771.08,27,9
+1999,Descent 3,50000,1,1
+1999,Quake III Arena,43200,15,2
+1999,QuakeWorld,37000,8,2
+1998,Quake II,36200,12,2
+1998,StarCraft: Brood War,16200,3,1

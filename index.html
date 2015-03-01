@@ -13,7 +13,7 @@
 	</div>
 
 	<script>
-	var maxPrize = 1000000
+	var maxPrize = 2000000
 
 
 
@@ -40,7 +40,9 @@
 		gamesData.forEach(function(game){
 			
 			var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-			svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", randomColor).style("stroke-width", "3");
+			if(game.Data.length > 3){
+				svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", randomColor).style("stroke-width", "5");
+			}
 
 		});
 		
