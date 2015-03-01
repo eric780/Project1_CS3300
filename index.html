@@ -47,81 +47,91 @@
 
 	var yScale2 = d3.scale.linear().domain([0, maxPrize2]).range([canvasY - bottomMargin, topMargin]);
 
-	var gamesData;
+	var gamesData = [];
 	d3.json("gamesData.json", function(error, data){
-		gamesData = data;
+		data.forEach(function(d) {
+			if(d.Data.length > 3) {
+				//filter out data without many points
+				gamesData.push(d);
+			}
+		})
 
 		var line = d3.svg.line()
-		.x(function(game){ return xScale(Number(game["Year"])) })
-		.y(function(game){ return yScale(Number(game["Prize"])) });
+			.x(function(game){ return xScale(Number(game["Year"])) })
+			.y(function(game){ return yScale(Number(game["Prize"])) });
 		var line2 = d3.svg.line()
-		.x(function(game){ return xScale(Number(game["Year"])) })
-		.y(function(game){ return yScale2(Number(game["Prize"])) });
+			.x(function(game){ return xScale(Number(game["Year"])) })
+			.y(function(game){ return yScale2(Number(game["Prize"])) });
 
-		var colAngle = 0;
 		var angleIncrement = 360 / (gamesData.length - nonVideoGames.length);
+		var colAngle = angleIncrement;
 		gamesData.forEach(function(game){
-			var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
-
-			var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
-			if(nonVideoGames.indexOf(game.Game) !== -1) {
-				newPath.style("stroke", "#000000").style("stroke-width", "5px");
-				newPath2.style("stroke", "#000000").style("stroke-width", "5px");
-			} else {
-				if(game.Data.length > 3){
-					//filter out data without many points
-					newPath.style("stroke", d3.hsl(colAngle, 1, 0.45));
-					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.45));
-				}
-				colAngle += angleIncrement;
-			}
-
 			//find 2014 data points
 			var needsLabel = false;
 			var last_entry;
 			game.Data.forEach(function(entry){
-				if(entry.Year == "2014"){
+				if(entry.Year === "2014"){
 					needsLabel = true;
 					last_entry = entry;
 				}
 			});
 
-			//append label
 			if(needsLabel){
-				svg.append("text").text(game.Game)
-				.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale(Number(last_entry.Prize)) + ")")
-				.attr("dy", "5px");
+				//append actual line
+				var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
+				var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
 
-				svg2.append("text").text(game.Game)
-				.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale2(Number(last_entry.Prize)) + ")")
-				.attr("dy", "5px");
+				//append label
+				var txt1 = svg.append("text").text(game.Game)
+					.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale(Number(last_entry.Prize)) + ")"
+						+ ", rotate(-0)" )
+					.attr("dy", "5px").attr("fill", d3.hsl(colAngle, 1, 0.4));
+				var txt2 = svg2.append("text").text(game.Game)
+					.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale2(Number(last_entry.Prize)) + ")"
+						+ ", rotate(-0)")
+					.attr("dy", "5px").attr("fill", d3.hsl(colAngle, 1, 0.4));
+
+				//color the label and the line
+				if(nonVideoGames.indexOf(game.Game) !== -1) {
+					newPath.style("stroke", "#000000").style("stroke-width", "5px");
+					newPath2.style("stroke", "#000000").style("stroke-width", "5px");
+					txt1.attr("fill", "black");
+					txt2.attr("fill", "black");
+				} else {
+					newPath.style("stroke", d3.hsl(colAngle, 1, 0.4));
+					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.4));
+					txt1.attr("fill", d3.hsl(colAngle, 1, 0.4));
+					txt2.attr("fill", d3.hsl(colAngle, 1, 0.4));
+				}
 			}
 
+			colAngle += angleIncrement;
 		});
 		
+
+		//AXES
 		var xAxis = d3.svg.axis().scale(xScale).orient("bottom").tickFormat(d3.format(""));
 		//axes: graph 1
 		var yAxis = d3.svg.axis().scale(yScale).orient("left").tickFormat(function(d) {return d3.format(".1f")(d/1000000);});
 		svg.append("g").attr("class", "axis").attr("transform", "translate(0, " + (canvasY - bottomMargin) + ")").call(xAxis);
 		svg.append("g").attr("class", "axis").attr("transform", "translate(" + (leftMargin) + ", 0)").call(yAxis);
-		//Title and axis labels
+		//axis labels
 		svg.append("text").attr("x", canvasX/2).attr("y", canvasY-15)
 			.attr("font-size", "15").attr("text-anchor", "middle").text("Year");
 		svg.append("text").attr("x", "20").attr("y", canvasY/2)
 			.attr("font-size", "15").attr("text-anchor", "middle").attr("transform", "rotate(-90, 20, "+ canvasY/2 +")")
 			.text("Prize Money (millions of dollars)");
-
-
 		//axes: graph 2
 		var yAxis2 = d3.svg.axis().scale(yScale2).orient("left").tickFormat(function(d) {return d3.format(".1f")(d/1000000);});
 		svg2.append("g").attr("class", "axis").attr("transform", "translate(0, " + (canvasY - bottomMargin) + ")").call(xAxis);
 		svg2.append("g").attr("class", "axis").attr("transform", "translate(" + (leftMargin) + ", 0)").call(yAxis2);
-		//Title and axis labels
+		//axis labels
 		svg2.append("text").attr("x", canvasX/2).attr("y", canvasY-15)
 			.attr("font-size", "15").attr("text-anchor", "middle").text("Year");
 		svg2.append("text").attr("x", "20").attr("y", canvasY/2)
 			.attr("font-size", "15").attr("text-anchor", "middle").attr("transform", "rotate(-90, 20, "+ canvasY/2 +")")
 			.text("Prize Money (millions of dollars)");
+			
 	});
 	</script>
 </body>
