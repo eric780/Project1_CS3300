@@ -14,7 +14,7 @@
 
 	<script>
 	var maxPrize = 17000000;
-	var nonVideoGames = ["Snooker"];
+	var nonVideoGames = ["Snooker", "Poker World Series"];
 	var canvasX = 1000;
 	var canvasY = 500;
 	var bottomMargin = 50;
@@ -32,8 +32,8 @@
 	//year
 	var xScale = d3.scale.linear().domain([1997.5, 2014.5]).range([leftMargin, canvasX - rightMargin]);
 	//prize money
-	var yScale = d3.scale.log().domain([100, maxPrize]).range([canvasY - bottomMargin, topMargin]);
-	//var yScale = d3.scale.linear().domain([0, maxPrize]).range([canvasY - bottomMargin, topMargin]);
+	//var yScale = d3.scale.log().domain([100, maxPrize]).range([canvasY - bottomMargin, topMargin]);
+	var yScale = d3.scale.linear().domain([0, maxPrize]).range([canvasY - bottomMargin, topMargin]);
 
 	var gamesData;
 	d3.json("gamesData.json", function(error, data){
@@ -46,7 +46,11 @@
 		var colAngle = 0;
 		var angleIncrement = 360 / (gamesData.length - nonVideoGames.length);
 		gamesData.forEach(function(game){
-			var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none")
+			var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
+
+			
+
+
 			if(nonVideoGames.indexOf(game.Game) !== -1) {
 				newPath.style("stroke", "#000000").style("stroke-width", "5px");
 			} else {
@@ -56,6 +60,23 @@
 				}
 				colAngle += angleIncrement;
 			}
+
+			//find 2014 data points
+			var needsLabel = false;
+			var 2014Data;
+			game.Data.forEach(function(entry){
+				if(entry.Year == "2014"){
+					needsLabel = true;
+					2014Data = entry;
+				}
+			});
+
+			//append label
+			if(needsLabel){
+				svg.append(game.Game)
+				.attr("transform", "translate(" + (canvasX-rightmargin) + "," + yScale(Number(2014Data.Prize)) + ")");
+			}
+
 		});
 		
 
