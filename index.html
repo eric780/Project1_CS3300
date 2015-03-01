@@ -13,7 +13,7 @@
 	</div>
 
 	<script>
-	var maxPrize = 2000000
+	var maxPrize = 8000000
 
 
 
@@ -28,6 +28,7 @@
 	var xScale = d3.scale.linear().domain([1998, 2014]).range([0, 1000]);
 	//prize money
 	var yScale = d3.scale.linear().domain([0, maxPrize]).range([500, 0]);
+	//var yScale = d3.scale.pow().exponent(.5).domain([0, maxPrize]).range([500, 0]);
 
 	var gamesData;
 	d3.json("gamesData.json", function(error, data){
