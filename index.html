@@ -14,37 +14,48 @@
 
 	<script>
 	var maxPrize = 17000000;
+	var nonVideoGames = ["Snooker"];
+	var canvasX = 1000;
+	var canvasY = 500;
+	var bottomMargin = 50;
+	var leftMargin = 70;
+	var topMargin = 50;
+	var rightMargin = 50;
 
 	var svg = d3.select("#main").append("svg")
 		.attr("id", "main_svg")
-		.attr("height", "500")
-		.attr("width", "1000");
+		.attr("height", canvasY)
+		.attr("width", canvasX);
 
 	var g = svg.append("g");
 
 	//year
-	var xScale = d3.scale.linear().domain([1997.5, 2014.5]).range([70, 950]);
+	var xScale = d3.scale.linear().domain([1997.5, 2014.5]).range([leftMargin, canvasX - rightMargin]);
 	//prize money
-	var yScale = d3.scale.log().domain([100, maxPrize]).range([450, 50]);
+	var yScale = d3.scale.log().domain([100, maxPrize]).range([canvasY - bottomMargin, topMargin]);
+	//var yScale = d3.scale.linear().domain([0, maxPrize]).range([canvasY - bottomMargin, topMargin]);
 
 	var gamesData;
 	d3.json("gamesData.json", function(error, data){
 		gamesData = data;
-		gamesData.forEach(function(game){
-
-		}
 
 		var line = d3.svg.line()
 		.x(function(game){ return xScale(Number(game["Year"])) })
 		.y(function(game){ return yScale(Number(game["Prize"])) });
 
 		var colAngle = 0;
-		var angleIncrement = 360 / gamesData.length;
+		var angleIncrement = 360 / (gamesData.length - nonVideoGames.length);
 		gamesData.forEach(function(game){
-			if(game.Data.length > 3){
-				svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", d3.hsl(colAngle, 1, 0.45));
+			var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none")
+			if(nonVideoGames.indexOf(game.Game) !== -1) {
+				newPath.style("stroke", "#000000").style("stroke-width", "5px");
+			} else {
+				if(game.Data.length > 3){
+					//filter out data without many points
+					newPath.style("stroke", d3.hsl(colAngle, 1, 0.45));
+				}
+				colAngle += angleIncrement;
 			}
-			colAngle += angleIncrement;
 		});
 		
 
@@ -65,13 +76,17 @@
 				}
 			}
 		);
-		svg.append("g").attr("class", "axis").attr("transform", "translate(0, 450)").call(xAxis);
-		svg.append("g").attr("class", "axis").attr("transform", "translate(70, 0)").call(yAxis);
+		svg.append("g").attr("class", "axis").attr("transform", "translate(0, " + (canvasY - bottomMargin) + ")").call(xAxis);
+		svg.append("g").attr("class", "axis").attr("transform", "translate(" + (leftMargin) + ", 0)").call(yAxis);
 
 		//Title and axis labels
-		svg.append("text").attr("x", "500").attr("y", "50").attr("font-size", "30").attr("text-anchor", "middle").text("Title");
-		svg.append("text").attr("x", "500").attr("y", "485").attr("font-size", "15").attr("text-anchor", "middle").text("Year");
-		svg.append("text").attr("x", "20").attr("y", "250").attr("font-size", "15").attr("text-anchor", "middle").text("Prize Money (dollars)").attr("transform", "rotate(-90, 20, 250)");
+		svg.append("text").attr("x", canvasX/2).attr("y", "50")
+			.attr("font-size", "30").attr("text-anchor", "middle").text("Title");
+		svg.append("text").attr("x", canvasX/2).attr("y", canvasY-15)
+			.attr("font-size", "15").attr("text-anchor", "middle").text("Year");
+		svg.append("text").attr("x", "20").attr("y", canvasY/2)
+			.attr("font-size", "15").attr("text-anchor", "middle").attr("transform", "rotate(-90, 20, "+ canvasY/2 +")")
+			.text("Prize Money (dollars)");
 	});
 	</script>
 </body>
