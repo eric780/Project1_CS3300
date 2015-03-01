@@ -309,7 +309,7 @@ Year,Game,Prize,Players,Tournaments
 2003,Unreal Tournament 2003,107656.41,13,7
 2003,Quake III Arena,94663.46,21,5
 2003,FIFA 03,40066.44,6,2
-2003,Counter-Strike,365817.47,294,8
+2002,Counter-Strike,365817.47,294,8
 2002,StarCraft: Brood War,106554.66,28,7
 2002,Quake III Arena,92666.1,12,3
 2002,2002 FIFA World Cup,43000,8,1
@@ -317,18 +317,18 @@ Year,Game,Prize,Players,Tournaments
 2002,Unreal Tournament,43000,8,1
 2002,WarCraft III,31285.25,12,4
 2002,Unreal Tournament 2003,25500,8,1
-2002,Counter-Strike,318071.67,167,9
+2001,Counter-Strike,318071.67,167,9
 2001,Quake III Arena,127864.7,37,10
 2001,Age of Empires II: The Age of Kings,126000,10,2
 2001,StarCraft: Brood War,75636.99,38,6
 2001,FIFA 2001,35000,3,1
 2001,Unreal Tournament,35000,3,1
 2001,QuakeWorld,15000,8,1
-2001,Quake III Arena,307276.63,86,15
+2000,Quake III Arena,307276.63,86,15
 2000,StarCraft: Brood War,133038.04,47,9
 2000,Age of Empires II: The Age of Kings,50000,4,1
 2000,Counter-Strike,23763.33,52,2
-2000,StarCraft: Brood War,152771.08,27,9
+1999,StarCraft: Brood War,152771.08,27,9
 1999,Descent 3,50000,1,1
 1999,Quake III Arena,43200,15,2
 1999,QuakeWorld,37000,8,2
@@ -351,3 +351,9 @@ Year,Game,Prize,Players,Tournaments
 2000,Snooker,2253291,,1
 1999,Snooker,2160690,,1
 1998,Snooker,2041852.05,,1
+2014,Poker World Series,62820200,,65
+2013,Poker World Series,59708800,,62
+2012,Poker World Series,62021200,,61
+2011,Poker World Series,64531000,,59
+2010,Poker World Series,68798600,,57
+2009,Poker World Series,15847250,,57
