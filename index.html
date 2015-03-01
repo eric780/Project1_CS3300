@@ -15,7 +15,6 @@
 	<script>
 	var maxPrize = 17000000;
 
-
 	var svg = d3.select("#main").append("svg")
 		.attr("id", "main_svg")
 		.attr("height", "500")
@@ -42,7 +41,9 @@
 		var colAngle = 0;
 		var angleIncrement = 360 / gamesData.length;
 		gamesData.forEach(function(game){
-			svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", d3.hsl(colAngle, 1, 0.45));
+			if(game.Data.length > 3){
+				svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", d3.hsl(colAngle, 1, 0.45));
+			}
 			colAngle += angleIncrement;
 		});
 		
