@@ -23,7 +23,7 @@
 	var bottomMargin = 50;
 	var leftMargin = 70;
 	var topMargin = 50;
-	var rightMargin = 50;
+	var rightMargin = 200;
 
 	var svg = d3.select("#main").append("svg")
 		.attr("id", "main_svg")
@@ -78,18 +78,23 @@
 
 			//find 2014 data points
 			var needsLabel = false;
-			var 2014Data;
+			var last_entry;
 			game.Data.forEach(function(entry){
 				if(entry.Year == "2014"){
 					needsLabel = true;
-					2014Data = entry;
+					last_entry = entry;
 				}
 			});
 
 			//append label
 			if(needsLabel){
-				svg.append(game.Game)
-				.attr("transform", "translate(" + (canvasX-rightmargin) + "," + yScale(Number(2014Data.Prize)) + ")");
+				svg.append("text").text(game.Game)
+				.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale(Number(last_entry.Prize)) + ")")
+				.attr("dy", "5px");
+
+				svg2.append("text").text(game.Game)
+				.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale2(Number(last_entry.Prize)) + ")")
+				.attr("dy", "5px");
 			}
 
 		});
