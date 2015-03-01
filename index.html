@@ -13,8 +13,7 @@
 	</div>
 
 	<script>
-	var maxPrize = 17000000
-
+	var maxPrize = 17000000;
 
 
 	var svg = d3.select("#main").append("svg")
@@ -25,26 +24,53 @@
 	var g = svg.append("g");
 
 	//year
-	var xScale = d3.scale.linear().domain([1998, 2014]).range([0, 1000]);
+	var xScale = d3.scale.linear().domain([1997.5, 2014.5]).range([70, 950]);
 	//prize money
-	var yScale = d3.scale.linear().domain([0, maxPrize]).range([500, 0]);
+	var yScale = d3.scale.log().domain([100, maxPrize]).range([450, 50]);
 
 	var gamesData;
 	d3.json("gamesData.json", function(error, data){
 		gamesData = data;
+		gamesData.forEach(function(game){
+
+		}
 
 		var line = d3.svg.line()
 		.x(function(game){ return xScale(Number(game["Year"])) })
 		.y(function(game){ return yScale(Number(game["Prize"])) });
 
+		var colAngle = 0;
+		var angleIncrement = 360 / gamesData.length;
 		gamesData.forEach(function(game){
-			
-			
-			svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", "black");
-
+			svg.append("path").attr("d", line(game.Data)).style("fill", "none").style("stroke", d3.hsl(colAngle, 1, 0.45));
+			colAngle += angleIncrement;
 		});
 		
 
+		var xAxis = d3.svg.axis().scale(xScale).orient("bottom").tickFormat(d3.format(""));
+		var yAxis = d3.svg.axis().scale(yScale).orient("left").tickFormat(
+			function(d){
+				//logic insipired by http://stackoverflow.com/questions/2967898/retrieving-the-first-digit-of-a-number
+
+				//get first digit i
+				i = d;
+				while (i >= 10) {
+					i /= 10;
+				}
+
+				//print out only if the number starts with 1
+				if(Math.round(i) === 1) {
+					return (d3.format("s"))(d);
+				}
+			}
+		);
+		svg.append("g").attr("class", "axis").attr("transform", "translate(0, 450)").call(xAxis);
+		svg.append("g").attr("class", "axis").attr("transform", "translate(70, 0)").call(yAxis);
+
+		//Title and axis labels
+		svg.append("text").attr("x", "500").attr("y", "50").attr("font-size", "30").attr("text-anchor", "middle").text("Title");
+		svg.append("text").attr("x", "500").attr("y", "485").attr("font-size", "15").attr("text-anchor", "middle").text("Year");
+		svg.append("text").attr("x", "20").attr("y", "250").attr("font-size", "15").attr("text-anchor", "middle").text("Prize Money (dollars)").attr("transform", "rotate(-90, 20, 250)");
 	});
 	</script>
 </body>
