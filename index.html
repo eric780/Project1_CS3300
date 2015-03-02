@@ -13,9 +13,10 @@
 		<h3>Derrick Lin (drl222), Eric Lin (esl89), Timothy Abbott (tra32)</h3>
 	</header>
 	<div id="main">
+		<svg width="400" height="150" id="legend"></svg>
 	</div>
 	<footer>
-		Data about e-sports comes from <a href="http://www.esportsearnings.com/history">http://www.esportsearnings.com/history</a>.
+		Data about e-sports comes from <a href="http://www.esportsearnings.com/history">http://www.esportsearnings.com/history</a>. The data about snooker and cricket come from Wikipedia.
 	</footer>
 
 	<script>
@@ -24,7 +25,6 @@
 	//all variables related to second graph end in a '2'
 	var maxPrize = 20000000;
 	var maxPrize2 = 2000000;
-
 	var maxThickness = 1800;
 
 	//nonVideoGames contains data that we are comparing video game prizes to
@@ -36,15 +36,17 @@
 	var bottomMargin = 50;
 	var leftMargin = 70;
 	var topMargin = 50;
-	var rightMargin = 200;
+	var rightMargin = 150;
+
+	var main = d3.select("#main").style("width", canvasX + "px");
 
 	//create two svgs
-	var svg = d3.select("#main").append("svg")
+	var svg = main.append("svg")
 		.attr("id", "main_svg")
 		.attr("height", canvasY)
 		.attr("width", canvasX);
 
-	var svg2 = d3.select("#main").append("svg")
+	var svg2 = main.append("svg")
 		.attr("id", "main_svg")
 		.attr("height", canvasY)
 		.attr("width", canvasX);
@@ -58,7 +60,7 @@
 	var yScale = d3.scale.linear().domain([0, maxPrize]).range([canvasY - bottomMargin, topMargin]);
 	var yScale2 = d3.scale.linear().domain([0, maxPrize2]).range([canvasY - bottomMargin, topMargin]);
 	//popularity
-	var tScale = d3.scale.linear().domain([0, 2000]).range([0, 30]);
+	var tScale = d3.scale.linear().domain([0, 2000]).range([0, 60]);
 
 	var thicknessScale = d3.scale.linear().domain([0, maxThickness]).range([1, 20]);
 
@@ -116,11 +118,6 @@
 			});
 
 			if(needsLabel){
-				//append actual line
-
-				var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
-				var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
-
 				//append label
 				var txt1 = svg.append("text").text(game.Game)
 					.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale(Number(last_entry.Prize)) + ")"
@@ -138,8 +135,8 @@
 				if(nonVideoGames.indexOf(game.Game) !== -1) {
 					newPath.style("stroke", "#000000").style("stroke-width", thicknessScale(Number(last_entry.Players)));
 					newPath2.style("stroke", "#000000").style("stroke-width", thicknessScale(Number(last_entry.Players)));
-					txt1.attr("fill", "black");
-					txt2.attr("fill", "black");
+					txt1.attr("fill", "black").attr("class", "specialLabel");
+					txt2.attr("fill", "black").attr("class", "specialLabel");
 				} else {
 					newPath.style("stroke", d3.hsl(colAngle, 1, 0.4))
 					.style("stroke-width", thicknessScale(Number(last_entry.Players)));
@@ -180,10 +177,45 @@
 		var offset = 8;
 		svg.append("rect").attr("x", leftMargin - offset).attr("y", yScale(maxPrize2))
 			.attr("width", canvasX - leftMargin - rightMargin).attr("height",yScale(0) - yScale(maxPrize2) + offset)
-			//.attr("fill", "black").attr("opacity", 0.25)
-			.attr("fill", "none")
-			.attr("stroke", "black").attr("stroke-width", "3px")
+			.attr("fill", "black").attr("opacity", 0.25)
+			/*.attr("fill", "none")
+			.attr("stroke", "gray").attr("stroke-width", "3px")
+			.attr("opacity", 0.7)*/
 			.attr("rx", 10).attr("ry", 10);
+
+		//Legend
+		var legend = d3.select("#legend");
+		legend.append("text").attr("x", 200).attr("y", 20)
+			.attr("font-size", "20").attr("text-anchor", "middle").text("Legend");
+
+
+		legend.append("line").attr("x1", 30).attr("y1", 50)
+			.attr("x2", 230).attr("y2", 50).attr("stroke", "black")
+			.attr("stroke-width", tScale(1000))
+			.attr("stroke-linecap", "round").attr("opacity", 0.9);
+		legend.append("text").attr("x", 320).attr("y", 50)
+			.attr("font-size", "16").attr("text-anchor", "middle").text("1000 participants");
+
+		legend.append("line").attr("x1", 30).attr("y1", 90)
+			.attr("x2", 230).attr("y2", 90).attr("stroke", "black")
+			.attr("stroke-width", tScale(500))
+			.attr("stroke-linecap", "round").attr("opacity", 0.9);
+		legend.append("text").attr("x", 320).attr("y", 90)
+			.attr("font-size", "16").attr("text-anchor", "middle").text("500 participants");
+
+		legend.append("line").attr("x1", 30).attr("y1", 120)
+			.attr("x2", 230).attr("y2", 120).attr("stroke", "black")
+			.attr("stroke-width", tScale(250))
+			.attr("stroke-linecap", "round").attr("opacity", 0.9);
+		legend.append("text").attr("x", 320).attr("y", 120)
+			.attr("font-size", "16").attr("text-anchor", "middle").text("250 participants");
+
+		legend.append("line").attr("x1", 30).attr("y1", 140)
+			.attr("x2", 230).attr("y2", 140).attr("stroke", "black")
+			.attr("stroke-width", tScale(50))
+			.attr("stroke-linecap", "round").attr("opacity", 0.9);
+		legend.append("text").attr("x", 320).attr("y", 140)
+			.attr("font-size", "16").attr("text-anchor", "middle").text("50 participants");
 	});
 
 
@@ -200,15 +232,10 @@
 			returnG.append("line").attr("x1", startX).attr("y1", startY)
 				.attr("x2", endX).attr("y2", endY).attr("stroke", "inherit")
 				.attr("stroke-width", tScale(Number(data[i+1]["Players"])))
-				.attr("stroke-linecap", "round").attr("opacity", 0.7);
+				.attr("stroke-linecap", "round").attr("opacity", 0.9);
 		}
 		return returnG;
 	}
-
-
-	var line = d3.svg.line()
-	.x(function(game){ return xScale(Number(game["Year"])) })
-	.y(function(game){ return yScale(Number(game["Prize"])) });
 	</script>
 </body>
 </html>

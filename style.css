@@ -7,17 +7,26 @@ h1, h3 {
 	font-family: 'Slabo 27px', serif;
 }
 
-footer {
-	font-size: 12px;
-	font-family: Arial, sans-serif;
-}
-
 .gameLabel, .axisLabel {
 	font-family: 'Slabo 27px', serif;
 }
 
+.specialLabel {
+	font-family: Arial, sans-serif;
+	font-style: italic;
+}
+
 footer {
 	padding: 20px;
+}
+
+footer p {
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+}
+
+#main{
+	margin: auto;
 }
 
 header, footer, svg {
@@ -34,6 +43,19 @@ header, footer, svg {
 	fill:none;
 	stroke:#666666;
 	stroke-width:2;
+}
+
+#legend {
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	position:absolute;
+	left: 300px;
+	top: 200px;
+}
+
+.clear {
+	clear: both;
 }
 
 a { 
