@@ -20,10 +20,17 @@
 
 	<script>
 
+	//max Y's for each graph
+	//all variables related to second graph end in a '2'
 	var maxPrize = 20000000;
 	var maxPrize2 = 2000000;
 
+	var maxThickness = 1800;
+
+	//nonVideoGames contains data that we are comparing video game prizes to
 	var nonVideoGames = ["Snooker", "Poker World Series", "Cricket World Cup"];
+	var importantGames = nonVideoGames + ["Dota 2", "League of Legends", "World of Tanks", "CrossFire", "World of Warcraft",
+	    "Counter-Strike", "Starcraft II"];
 	var canvasX = 1000;
 	var canvasY = 500;
 	var bottomMargin = 50;
@@ -31,6 +38,7 @@
 	var topMargin = 50;
 	var rightMargin = 200;
 
+	//create two svgs
 	var svg = d3.select("#main").append("svg")
 		.attr("id", "main_svg")
 		.attr("height", canvasY)
@@ -52,14 +60,29 @@
 	//popularity
 	var tScale = d3.scale.linear().domain([0, 2000]).range([0, 30]);
 
+	var thicknessScale = d3.scale.linear().domain([0, maxThickness]).range([1, 20]);
+
 	var gamesData = [];
 	d3.json("gamesData.json", function(error, data){
 		data.forEach(function(d) {
+			//filter out data without many points
 			if(d.Data.length > 3) {
-				//filter out data without many points
 				gamesData.push(d);
 			}
 		})
+
+		/*
+		//create scaling functions
+		var line = d3.svg.line()
+		.x(function(game){ return xScale(Number(game["Year"])) })
+		.y(function(game){ return yScale(Number(game["Prize"])) })
+		.interpolate("basis");
+
+		var line2 = d3.svg.line()
+			.x(function(game){ return xScale(Number(game["Year"])) })
+			.y(function(game){ return yScale2(Number(game["Prize"])) })
+			.interpolate("basis");
+			*/
 
 		var angleIncrement = 360 / (gamesData.length - nonVideoGames.length);
 		var colAngle = angleIncrement;
@@ -68,30 +91,36 @@
 			var newPath = drawPaths(game.Data, svg, yScale);
 			var newPath2 = drawPaths(game.Data, svg2, yScale2);
 
-			if(nonVideoGames.indexOf(game.Game) !== -1) {
+			//var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
+			/*if(nonVideoGames.indexOf(game.Game) !== -1) {
 				newPath.style("stroke", "#000000").style("stroke-width", "5");
 				newPath2.style("stroke", "#000000").style("stroke-width", "5");
 			} 
-			else {
+			else {*/
 				if(game.Data.length > 3){
 					//filter out data without many points
 					newPath.style("stroke", d3.hsl(colAngle, 1, 0.45));
 					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.45));
 				}
 				colAngle += angleIncrement;
-			}
+			//}
 
 			//find 2014 data points
 			var needsLabel = false;
 			var last_entry;
 			game.Data.forEach(function(entry){
-				if(entry.Year === "2014"){
+				if(entry.Year === "2014" && (importantGames.indexOf(game.Game) >= 0)){
 					needsLabel = true;
 					last_entry = entry;
 				}
 			});
 
 			if(needsLabel){
+				//append actual line
+
+				var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
+				var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
+
 				//append label
 				var txt1 = svg.append("text").text(game.Game)
 					.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale(Number(last_entry.Prize)) + ")"
@@ -107,13 +136,15 @@
 
 				//color the label and the line
 				if(nonVideoGames.indexOf(game.Game) !== -1) {
-					newPath.style("stroke", "#000000").style("stroke-width", "5px");
-					newPath2.style("stroke", "#000000").style("stroke-width", "5px");
+					newPath.style("stroke", "#000000").style("stroke-width", thicknessScale(Number(last_entry.Players)));
+					newPath2.style("stroke", "#000000").style("stroke-width", thicknessScale(Number(last_entry.Players)));
 					txt1.attr("fill", "black");
 					txt2.attr("fill", "black");
 				} else {
-					newPath.style("stroke", d3.hsl(colAngle, 1, 0.4));
-					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.4));
+					newPath.style("stroke", d3.hsl(colAngle, 1, 0.4))
+					.style("stroke-width", thicknessScale(Number(last_entry.Players)));
+					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.4))
+					.style("stroke-width", thicknessScale(Number(last_entry.Players)));
 					txt1.attr("fill", d3.hsl(colAngle, 1, 0.4));
 					txt2.attr("fill", d3.hsl(colAngle, 1, 0.4));
 				}
