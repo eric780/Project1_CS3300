@@ -58,9 +58,8 @@
 	var yScale = d3.scale.linear().domain([0, maxPrize]).range([canvasY - bottomMargin, topMargin]);
 	var yScale2 = d3.scale.linear().domain([0, maxPrize2]).range([canvasY - bottomMargin, topMargin]);
 	//popularity
-	var tScale = d3.scale.linear().domain([0, 2000]).range([0, 30]);
+	var tScale = d3.scale.linear().domain([0, maxThickness]).range([0, 30]);
 
-	var thicknessScale = d3.scale.linear().domain([0, maxThickness]).range([1, 20]);
 
 	var gamesData = [];
 	d3.json("gamesData.json", function(error, data){
@@ -105,7 +104,7 @@
 				colAngle += angleIncrement;
 			//}
 
-			//find 2014 data points
+			//find ending (2014) data points
 			var needsLabel = false;
 			var last_entry;
 			game.Data.forEach(function(entry){
@@ -116,12 +115,7 @@
 			});
 
 			if(needsLabel){
-				//append actual line
-
-				//var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
-				//var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
-
-				//append label
+				//append labels
 				var txt1 = svg.append("text").text(game.Game)
 					.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale(Number(last_entry.Prize)) + ")"
 						+ ", rotate(-0)" )
@@ -134,19 +128,12 @@
 					.attr("dy", "5px").attr("fill", d3.hsl(colAngle, 1, 0.4))
 					.attr("class", "gameLabel");
 
-				//color the label and the line
+				//color the label and the line for nonVideoGames
 				if(nonVideoGames.indexOf(game.Game) !== -1) {
-					newPath.style("stroke", "#000000").style("stroke-width", thicknessScale(Number(last_entry.Players)));
-					newPath2.style("stroke", "#000000").style("stroke-width", thicknessScale(Number(last_entry.Players)));
+					newPath.style("stroke", "#000000").style("stroke-width", tScale(Number(last_entry.Players)));
+					newPath2.style("stroke", "#000000").style("stroke-width", tScale(Number(last_entry.Players)));
 					txt1.attr("fill", "black");
 					txt2.attr("fill", "black");
-				} else {
-					newPath.style("stroke", d3.hsl(colAngle, 1, 0.4))
-					.style("stroke-width", thicknessScale(Number(last_entry.Players)));
-					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.4))
-					.style("stroke-width", thicknessScale(Number(last_entry.Players)));
-					txt1.attr("fill", d3.hsl(colAngle, 1, 0.4));
-					txt2.attr("fill", d3.hsl(colAngle, 1, 0.4));
 				}
 			}
 
