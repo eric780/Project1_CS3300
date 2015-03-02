@@ -49,7 +49,8 @@
 	var svg2 = main.append("svg")
 		.attr("id", "main_svg")
 		.attr("height", canvasY)
-		.attr("width", canvasX);
+		.attr("width", canvasX)
+		.attr("class", "gray");
 
 	d3.select("header").style("width", canvasX+"px");
 	d3.select("footer").style("width", (canvasX - 40)+"px");
@@ -169,7 +170,8 @@
 		var offset = 8;
 		svg.append("rect").attr("x", leftMargin - offset).attr("y", yScale(maxPrize2))
 			.attr("width", canvasX - leftMargin - rightMargin).attr("height",yScale(0) - yScale(maxPrize2) + offset)
-			.attr("fill", "black").attr("opacity", 0.25)
+			.attr("fill", "#000000").attr("fill-opacity", 0.25)
+			.attr("stroke", "#666688").attr("stroke-width", "2px")
 			/*.attr("fill", "none")
 			.attr("stroke", "gray").attr("stroke-width", "3px")
 			.attr("opacity", 0.7)*/

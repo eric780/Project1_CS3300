@@ -1,10 +1,15 @@
 body {
-	background-color: #cccccc;
+	background-color: #222222;
 }
 
 h1, h3 {
 	text-align: center;
 	font-family: 'Slabo 27px', serif;
+}
+
+.gray {
+	background-color: #white;
+	border: 3px solid #999988;
 }
 
 .gameLabel, .axisLabel {
@@ -36,26 +41,26 @@ header, footer, svg {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 10px;
-	background-color: white;
+	border: 3px solid #888888;
+	background-color: #ffffff;
 }
 
-.axis path, .axis line{
-	fill:none;
-	stroke:#666666;
-	stroke-width:2;
-}
+
 
 #legend {
 	margin-left: auto;
 	margin-right: auto;
 	float: left;
 	position:absolute;
+	background-color: #eeeeee;
 	left: 300px;
 	top: 200px;
 }
 
-.clear {
-	clear: both;
+.axis path, .axis line{
+	fill:none;
+	stroke:#666666;
+	stroke-width:2;
 }
 
 a { 
