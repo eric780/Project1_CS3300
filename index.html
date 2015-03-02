@@ -54,6 +54,7 @@
 		var line = d3.svg.line()
 		.x(function(game){ return xScale(Number(game["Year"])) })
 		.y(function(game){ return yScale(Number(game["Prize"])) });
+
 		var line2 = d3.svg.line()
 		.x(function(game){ return xScale(Number(game["Year"])) })
 		.y(function(game){ return yScale2(Number(game["Prize"])) });
@@ -65,8 +66,8 @@
 
 			var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
 			if(nonVideoGames.indexOf(game.Game) !== -1) {
-				newPath.style("stroke", "#000000").style("stroke-width", "5px");
-				newPath2.style("stroke", "#000000").style("stroke-width", "5px");
+				newPath.style("stroke", "#000000").style("stroke-width", "5");
+				newPath2.style("stroke", "#000000").style("stroke-width", "5");
 			} else {
 				if(game.Data.length > 3){
 					//filter out data without many points
