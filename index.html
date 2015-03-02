@@ -38,7 +38,10 @@
 	var topMargin = 50;
 	var rightMargin = 150;
 
+	//adjust the main, header, and footer width
 	var main = d3.select("#main").style("width", canvasX + "px");
+	d3.select("header").style("width", canvasX+"px");
+	d3.select("footer").style("width", (canvasX - 40)+"px");
 
 	//create two svgs
 	var svg = main.append("svg")
@@ -52,9 +55,6 @@
 		.attr("width", canvasX)
 		.attr("class", "gray");
 
-	d3.select("header").style("width", canvasX+"px");
-	d3.select("footer").style("width", (canvasX - 40)+"px");
-
 	//year
 	var xScale = d3.scale.linear().domain([1997.5, 2014.5]).range([leftMargin, canvasX - rightMargin]);
 	//prize money
@@ -62,7 +62,6 @@
 	var yScale2 = d3.scale.linear().domain([0, maxPrize2]).range([canvasY - bottomMargin, topMargin]);
 	//popularity
 	var tScale = d3.scale.linear().domain([0, maxThickness]).range([0, 30]);
-
 
 	var gamesData = [];
 	d3.json("gamesData.json", function(error, data){
@@ -73,39 +72,18 @@
 			}
 		})
 
-		/*
-		//create scaling functions
-		var line = d3.svg.line()
-		.x(function(game){ return xScale(Number(game["Year"])) })
-		.y(function(game){ return yScale(Number(game["Prize"])) })
-		.interpolate("basis");
-
-		var line2 = d3.svg.line()
-			.x(function(game){ return xScale(Number(game["Year"])) })
-			.y(function(game){ return yScale2(Number(game["Prize"])) })
-			.interpolate("basis");
-			*/
-
 		var angleIncrement = 360 / (gamesData.length - nonVideoGames.length);
 		var colAngle = angleIncrement;
 		gamesData.forEach(function(game){
-			//var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
 			var newPath = drawPaths(game.Data, svg, yScale);
 			var newPath2 = drawPaths(game.Data, svg2, yScale2);
 
-			//var newPath2 = svg2.append("path").attr("d", line2(game.Data)).style("fill", "none");
-			/*if(nonVideoGames.indexOf(game.Game) !== -1) {
-				newPath.style("stroke", "#000000").style("stroke-width", "5");
-				newPath2.style("stroke", "#000000").style("stroke-width", "5");
-			} 
-			else {*/
-				if(game.Data.length > 3){
-					//filter out data without many points
-					newPath.style("stroke", d3.hsl(colAngle, 1, 0.45));
-					newPath2.style("stroke", d3.hsl(colAngle, 1, 0.45));
-				}
-				colAngle += angleIncrement;
-			//}
+			if(game.Data.length > 3){
+				//filter out data without many points
+				newPath.style("stroke", d3.hsl(colAngle, 1, 0.45));
+				newPath2.style("stroke", d3.hsl(colAngle, 1, 0.45));
+			}
+			colAngle += angleIncrement;
 
 			//find ending (2014) data points
 			var needsLabel = false;
@@ -135,8 +113,8 @@
 				if(nonVideoGames.indexOf(game.Game) !== -1) {
 					newPath.style("stroke", "#000000").style("stroke-width", tScale(Number(last_entry.Players)));
 					newPath2.style("stroke", "#000000").style("stroke-width", tScale(Number(last_entry.Players)));
-					txt1.attr("fill", "black");
-					txt2.attr("fill", "black");
+					txt1.attr("fill", "black").attr("class", "specialLabel");
+					txt2.attr("fill", "black").attr("class", "specialLabel");
 				}
 			}
 
@@ -172,9 +150,6 @@
 			.attr("width", canvasX - leftMargin - rightMargin).attr("height",yScale(0) - yScale(maxPrize2) + offset)
 			.attr("fill", "#000000").attr("fill-opacity", 0.25)
 			.attr("stroke", "#666688").attr("stroke-width", "2px")
-			/*.attr("fill", "none")
-			.attr("stroke", "gray").attr("stroke-width", "3px")
-			.attr("opacity", 0.7)*/
 			.attr("rx", 10).attr("ry", 10);
 
 		//Legend
@@ -214,8 +189,8 @@
 
 
 
-	/** takes in a game.Data, creates a "g" element in the given svg element,
-	 *  with the given y-scaling function, and returns the "g" element */
+	/** takes in game.Data, creates a g element in the given svg element,
+	 *  with the given y-scaling function, and returns the g element */
 	function drawPaths(data, svg, currYScale) {
 		var returnG = svg.append("g");
 		for(var i = 0; i < data.length - 1; i++) {
