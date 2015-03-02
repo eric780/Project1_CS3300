@@ -4,7 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Popularity and Prize Money of E-sports</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+	<style>
+		h1,h3{
+			font-family: 'Slabo 27px', serif;
+		}
+		.gameLabel{
+			font-family: 'Slabo 27px', serif;
+		}
+		.axisLabel{
+			font-family: 'Slabo 27px', serif;
+		}
+	</style>
 </head>
 <body>
 	<h1>Total World Tournament Prize Money for E-Sports</h1>
@@ -15,7 +28,7 @@
 	<script>
 
 	var maxPrize = 20000000;
-	var maxPrize2 = 2500000;
+	var maxPrize2 = 2000000;
 
 	var nonVideoGames = ["Snooker", "Poker World Series", "Cricket World Cup"];
 	var canvasX = 1000;
@@ -73,7 +86,8 @@
 			if(nonVideoGames.indexOf(game.Game) !== -1) {
 				newPath.style("stroke", "#000000").style("stroke-width", "5");
 				newPath2.style("stroke", "#000000").style("stroke-width", "5");
-			} else {
+			} 
+			else {
 				if(game.Data.length > 3){
 					//filter out data without many points
 					newPath.style("stroke", d3.hsl(colAngle, 1, 0.45));
@@ -92,6 +106,11 @@
 				}
 			});
 
+			if(last_entry && (Number(last_entry.Prize) > 1000000)){
+				newPath.style("stroke-width", "5");
+				newPath2.style("stroke-width", "5");
+			}
+
 			if(needsLabel){
 				//append actual line
 				var newPath = svg.append("path").attr("d", line(game.Data)).style("fill", "none");
@@ -101,11 +120,14 @@
 				var txt1 = svg.append("text").text(game.Game)
 					.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale(Number(last_entry.Prize)) + ")"
 						+ ", rotate(-0)" )
-					.attr("dy", "5px").attr("fill", d3.hsl(colAngle, 1, 0.4));
+					.attr("dy", "5px").attr("fill", d3.hsl(colAngle, 1, 0.4))
+					.attr("class", "gameLabel");
+
 				var txt2 = svg2.append("text").text(game.Game)
 					.attr("transform", "translate(" + (canvasX-rightMargin) + "," + yScale2(Number(last_entry.Prize)) + ")"
 						+ ", rotate(-0)")
-					.attr("dy", "5px").attr("fill", d3.hsl(colAngle, 1, 0.4));
+					.attr("dy", "5px").attr("fill", d3.hsl(colAngle, 1, 0.4))
+					.attr("class", "gameLabel");
 
 				//color the label and the line
 				if(nonVideoGames.indexOf(game.Game) !== -1) {
@@ -133,20 +155,20 @@
 		svg.append("g").attr("class", "axis").attr("transform", "translate(" + (leftMargin) + ", 0)").call(yAxis);
 		//axis labels
 		svg.append("text").attr("x", canvasX/2).attr("y", canvasY-15)
-			.attr("font-size", "15").attr("text-anchor", "middle").text("Year");
+			.attr("font-size", "15").attr("text-anchor", "middle").text("Year").attr("class", "axisLabel");
 		svg.append("text").attr("x", "20").attr("y", canvasY/2)
 			.attr("font-size", "15").attr("text-anchor", "middle").attr("transform", "rotate(-90, 20, "+ canvasY/2 +")")
-			.text("Prize Money (millions of dollars)");
+			.text("Prize Money (millions of dollars)").attr("class", "axisLabel");
 		//axes: graph 2
 		var yAxis2 = d3.svg.axis().scale(yScale2).orient("left").tickFormat(function(d) {return d3.format(".1f")(d/1000000);});
 		svg2.append("g").attr("class", "axis").attr("transform", "translate(0, " + (canvasY - bottomMargin) + ")").call(xAxis);
 		svg2.append("g").attr("class", "axis").attr("transform", "translate(" + (leftMargin) + ", 0)").call(yAxis2);
 		//axis labels
 		svg2.append("text").attr("x", canvasX/2).attr("y", canvasY-15)
-			.attr("font-size", "15").attr("text-anchor", "middle").text("Year");
+			.attr("font-size", "15").attr("text-anchor", "middle").text("Year").attr("class", "axisLabel");
 		svg2.append("text").attr("x", "20").attr("y", canvasY/2)
 			.attr("font-size", "15").attr("text-anchor", "middle").attr("transform", "rotate(-90, 20, "+ canvasY/2 +")")
-			.text("Prize Money (millions of dollars)");
+			.text("Prize Money (millions of dollars)").attr("class", "axisLabel");
 			
 	});
 	</script>
