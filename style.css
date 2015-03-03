@@ -53,8 +53,8 @@ header, footer, svg {
 	float: left;
 	position:absolute;
 	background-color: #eeeeee;
-	left: 300px;
-	top: 200px;
+	left: 27vw;
+	top: 27vh;
 }
 
 .axis path, .axis line{
