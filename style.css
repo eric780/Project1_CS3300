@@ -32,6 +32,7 @@ footer p {
 
 #main{
 	margin: auto;
+	position:relative;
 }
 
 header, footer, svg {
@@ -53,8 +54,10 @@ header, footer, svg {
 	float: left;
 	position:absolute;
 	background-color: #eeeeee;
-	left: 27vw;
-	top: 27vh;
+	left: 12%;
+	top: 6%;
+	font-family: 'Slabo 27px', serif;
+	z-index:2;
 }
 
 .axis path, .axis line{
